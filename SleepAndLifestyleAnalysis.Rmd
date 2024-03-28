@@ -1,0 +1,450 @@
+---
+title: "SLEEP AND LIFESTYLE ANALYSIS"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+  word_document: default
+---
+
+Importing the dataset
+
+```{r}
+df<-read.csv("C:/Users/Sneha Jain/Downloads/Sleep Analysis Survey (Responses) - Form Responses 1.csv")
+head(df)
+```
+Name of the columns
+
+```{r}
+names(df)
+```
+Changing the column names
+
+```{r}
+names(df)<-c('Timestamp','Gender','Age','Year','Branch','HoursOfSleep','QualityOfSleep','NapsInAweek', 'PhysicalActivityLevel', 'StressLevel','DailySteps','HoursOfECDevicesBeforeSleep','HeadacheFrequency', 'BreakfastSkip', 'DinnerTime','SleeplessNightsInAWeek','Feedback')
+```
+
+
+Seeing the modified names
+
+```{r}
+names(df)
+```
+
+First 6 columns of dataset
+```{r}
+head(df)
+```
+
+Removing timestamp and feedback from dataframe.
+```{r}
+df <- df[, !(names(df) %in% c("Timestamp", "Feedback"))]
+```
+
+
+Checking the first 6 columns 
+```{r}
+head(df)
+```
+
+Count of male and female in gender column
+
+```{r}
+count1 <- table(df$Gender, df$SleeplessNightsInAWeek)
+count1
+```
+
+Gender Vs Sleepless Nights
+```{r}
+library("ggplot2")
+ggplot(df, aes(x = Gender, fill = SleeplessNightsInAWeek)) +
+  geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
+  labs(title = "Gender vs Sleepless Nights", x = "Gender", y = "Sleepless nights") + 
+  theme_minimal()+theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title.x = element_text(size = 14, face = "bold"),
+    axis.title.y = element_text(size = 14, face = "bold"),
+    axis.text = element_text(size = 12)
+  )
+```
+
+Counts in age column
+```{r}
+count2 <- table(df$Age, df$SleeplessNightsInAWeek)
+count2
+```
+
+Age Vs Sleepless Nights
+```{r}
+ggplot(df, aes(x = Age, fill = SleeplessNightsInAWeek)) +
+  geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
+  labs(title = "Age vs Sleepless Nights", x = "Age", y = "Sleepless nights") + 
+  theme_minimal()+theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title.x = element_text(size = 14, face = "bold"),
+    axis.title.y = element_text(size = 14, face = "bold"),
+    axis.text = element_text(size = 12)
+  )+scale_x_continuous(breaks = unique(df$Age))
+```
+
+Counts in Year Column
+```{r}
+count3 <- table(df$Year, df$SleeplessNightsInAWeek)
+count3
+```
+
+Year Vs Sleepless Nights
+```{r}
+ggplot(df, aes(x = Year, fill = SleeplessNightsInAWeek)) +
+  geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
+  labs(title = "Year vs Sleepless Nights", x = "Year", y = "Sleepless nights") + 
+  theme_minimal()+theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title.x = element_text(size = 14, face = "bold"),
+    axis.title.y = element_text(size = 14, face = "bold"),
+    axis.text = element_text(size = 12)
+  )
+```
+
+Counts in Branch Column
+```{r}
+count4 <- table(df$Branch, df$SleeplessNightsInAWeek)
+count4
+```
+
+Branch Vs Sleepless Nights
+```{r}
+ggplot(df, aes(x = Branch, fill = SleeplessNightsInAWeek)) +
+  geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
+  labs(title = "Branch vs Sleepless Nights", x = "Branch", y = "Sleepless nights") + 
+  theme_minimal()+theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title.x = element_text(size = 14, face = "bold"),
+    axis.title.y = element_text(size = 14, face = "bold"),
+    axis.text = element_text(size = 12)
+  )
+```
+
+Counts in Hours of Sleep Column
+```{r}
+count5 <- table(df$HoursOfSleep, df$SleeplessNightsInAWeek)
+count5
+```
+
+Hours of Sleep Vs Sleepless Nights
+```{r}
+ggplot(df, aes(x = HoursOfSleep, fill = SleeplessNightsInAWeek)) +
+  geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
+  labs(title = "Hours Of Sleep vs Sleepless Nights", x = "Hours Of Sleep", y = "Sleepless nights") + 
+  theme_minimal()+theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title.x = element_text(size = 14, face = "bold"),
+    axis.title.y = element_text(size = 14, face = "bold"),
+    axis.text = element_text(size = 12)
+  )
+```
+
+Counts in Quality of Sleep Column
+```{r}
+count6 <- table(df$QualityOfSleep, df$SleeplessNightsInAWeek)
+count6
+```
+
+Quality of Sleep Vs Sleepless Nights
+```{r}
+ggplot(df, aes(x = QualityOfSleep, fill = SleeplessNightsInAWeek)) +
+  geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
+  labs(title = "Quality Of Sleep vs Sleepless Nights", x = "Quality Of Sleep", y = "Sleepless nights") + 
+  theme_minimal()+theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title.x = element_text(size = 14, face = "bold"),
+    axis.title.y = element_text(size = 14, face = "bold"),
+    axis.text = element_text(size = 12)
+  )+scale_x_continuous(breaks = unique(df$QualityOfSleep))
+```
+
+Counts in Nap Frequency Column
+```{r}
+count7 <- table(df$NapsInAweek, df$SleeplessNightsInAWeek)
+count7
+```
+
+Nap Frequency Vs Sleepless Nights
+```{r}
+ggplot(df, aes(x = NapsInAweek, fill = SleeplessNightsInAWeek)) +
+  geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
+  labs(title = "Naps In Week vs Sleepless Nights", x = "Naps In Week", y = "Sleepless nights") + 
+  theme_minimal()+theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title.x = element_text(size = 14, face = "bold"),
+    axis.title.y = element_text(size = 14, face = "bold"),
+    axis.text = element_text(size = 12)
+  )
+```
+
+Counts in Physical Activity Column
+```{r}
+count8 <- table(df$PhysicalActivityLevel, df$SleeplessNightsInAWeek)
+count8
+```
+
+Physical Activity Level Vs Sleepless Nights
+```{r}
+ggplot(df, aes(x = PhysicalActivityLevel, fill = SleeplessNightsInAWeek)) +
+  geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
+  labs(title = "Physical Activity Level vs Sleepless Nights", x = "Physical Activity Level", y = "Sleepless nights") + 
+  theme_minimal()+theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title.x = element_text(size = 14, face = "bold"),
+    axis.title.y = element_text(size = 14, face = "bold"),
+    axis.text = element_text(size = 12)
+  )+ scale_x_continuous(breaks = unique(df$PhysicalActivityLevel))
+```
+
+Stress Level Vs Sleepless Nights
+```{r}
+count9 <- table(df$StressLevel, df$SleeplessNightsInAWeek)
+count9
+```
+
+Stress Level Vs Sleepless Nights
+```{r}
+ggplot(df, aes(x = StressLevel, fill = SleeplessNightsInAWeek)) +
+  geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
+  labs(title = "Stress Level vs Sleepless Nights", x = "Stress Level", y = "Sleepless nights") + 
+  theme_minimal()+theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title.x = element_text(size = 14, face = "bold"),
+    axis.title.y = element_text(size = 14, face = "bold"),
+    axis.text = element_text(size = 12)
+  )+ scale_x_continuous(breaks = unique(df$StressLevel))
+```
+
+Counts in Daily Steps Column
+```{r}
+count10 <- table(df$DailySteps, df$SleeplessNightsInAWeek)
+count10
+```
+
+Daily Steps Vs Sleepless Nights
+```{r}
+ggplot(df, aes(x = DailySteps, fill = SleeplessNightsInAWeek)) +
+  geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
+  labs(title = "Daily Steps vs Sleepless Nights", x = "Daily Steps", y = "Sleepless nights") + 
+  theme_minimal()+theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title.x = element_text(size = 14, face = "bold"),
+    axis.title.y = element_text(size = 14, face = "bold"),
+    axis.text = element_text(size = 12)
+  )
+```
+
+Counts in Hours of EC devices Column
+```{r}
+count11 <- table(df$HoursOfECDevicesBeforeSleep, df$SleeplessNightsInAWeek)
+count11
+```
+
+Hours Of EC devices Vs Sleepless Nights
+```{r}
+ggplot(df, aes(x = HoursOfECDevicesBeforeSleep, fill = SleeplessNightsInAWeek)) +
+  geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
+  labs(title = "Hours Of EC Devices Before Sleep vs Sleepless Nights", x = "Hours Of EC Devices Before Sleep", y = "Sleepless nights") + 
+  theme_minimal()+theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title.x = element_text(size = 14, face = "bold"),
+    axis.title.y = element_text(size = 14, face = "bold"),
+    axis.text = element_text(size = 12)
+  )
+```
+
+Counts in Headache Frequency Column
+```{r}
+count12 <- table(df$HeadacheFrequency, df$SleeplessNightsInAWeek)
+count12
+```
+
+Headache Frequency Vs Sleepless Nights
+```{r}
+ggplot(df, aes(x = HeadacheFrequency, fill = SleeplessNightsInAWeek)) +
+  geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
+  labs(title = "Headache Frequency vs Sleepless Nights", x = "Headache Frequency", y = "Sleepless nights") + 
+  theme_minimal()+theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title.x = element_text(size = 14, face = "bold"),
+    axis.title.y = element_text(size = 14, face = "bold"),
+    axis.text = element_text(size = 12)
+  )
+```
+
+Counts in Breakfast Skip Column
+```{r}
+count13 <- table(df$BreakfastSkip, df$SleeplessNightsInAWeek)
+count13
+```
+
+Breakfast Skip Vs Sleepless Nights
+```{r}
+ggplot(df, aes(x = BreakfastSkip, fill = SleeplessNightsInAWeek)) +
+  geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
+  labs(title = "Breakfast Skip vs Sleepless Nights", x = "Breakfast Skip", y = "Sleepless nights") + 
+  theme_minimal()+theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title.x = element_text(size = 14, face = "bold"),
+    axis.title.y = element_text(size = 14, face = "bold"),
+    axis.text = element_text(size = 12)
+  )
+```
+
+Counts in Dinner Time Column
+```{r}
+count14 <- table(df$DinnerTime, df$SleeplessNightsInAWeek)
+count14
+```
+
+Dinner Time Vs Sleepless Nights
+```{r}
+ggplot(df, aes(x = DinnerTime, fill = SleeplessNightsInAWeek)) +
+  geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
+  labs(title = "Dinner Time vs Sleepless Nights", x = "Dinner Time", y = "Sleepless nights") + 
+  theme_minimal()+theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    axis.title.x = element_text(size = 14, face = "bold"),
+    axis.title.y = element_text(size = 14, face = "bold"),
+    axis.text = element_text(size = 12)
+  )
+```
+Identifying Outliers 
+
+Gender Column
+```{r}
+boxplot(SleeplessNightsInAWeek ~ Gender, data = df,
+        main = "Sleepless Nights by Gender",
+        xlab = "Gender",
+        ylab = "Sleepless Nights")
+```
+Age column
+```{r}
+boxplot(SleeplessNightsInAWeek ~ Age, data = df,
+        main = "Sleepless Nights by Age",
+        xlab = "Age",
+        ylab = "Sleepless Nights")
+```
+Branch Column
+```{r}
+boxplot(SleeplessNightsInAWeek ~ Branch, data = df,
+        main = "Sleepless Nights by Branch",
+        xlab = "Branch",
+        ylab = "Sleepless Nights")
+```
+Hours Of Sleep Column
+```{r}
+boxplot(SleeplessNightsInAWeek ~ HoursOfSleep, data = df,
+        main = "Sleepless Nights by Hours Of Sleep",
+        xlab = "Hours Of Sleep",
+        ylab = "Sleepless Nights")
+```
+Quality Of Sleep Column
+```{r}
+boxplot(SleeplessNightsInAWeek ~ QualityOfSleep, data = df,
+        main = "Sleepless Nights by Quality Of Sleep",
+        xlab = "Quality Of Sleep",
+        ylab = "Sleepless Nights")
+```
+Naps In A Week Column
+```{r}
+boxplot(SleeplessNightsInAWeek ~ NapsInAweek, data = df,
+        main = "Sleepless Nights by Naps In A Week",
+        xlab = "Naps In A Week",
+        ylab = "Sleepless Nights")
+```
+Physical Activity Level
+```{r}
+boxplot(SleeplessNightsInAWeek ~ PhysicalActivityLevel, data = df,
+        main = "Sleepless Nights by Physical Activity Level",
+        xlab = "Physical Activity Level",
+        ylab = "Sleepless Nights")
+```
+Stress Level
+```{r}
+boxplot(SleeplessNightsInAWeek ~ StressLevel, data = df,
+        main = "Sleepless Nights by Stress Level",
+        xlab = "Stress Level",
+        ylab = "Sleepless Nights")
+```
+Daily Steps
+```{r}
+boxplot(SleeplessNightsInAWeek ~ DailySteps, data = df,
+        main = "Sleepless Nights by Daily Steps",
+        xlab = "Daily Steps",
+        ylab = "Sleepless Nights")
+```
+Hours of EC Devices Before Sleep
+```{r}
+boxplot(SleeplessNightsInAWeek ~ HoursOfECDevicesBeforeSleep, data = df,
+        main = "Sleepless Nights by Hours of EC Devices Before Sleep",
+        xlab = "Hours of EC Devices Before Sleep",
+        ylab = "Sleepless Nights")
+```
+Headache Frequency
+```{r}
+boxplot(SleeplessNightsInAWeek ~ HeadacheFrequency, data = df,
+        main = "Sleepless Nights by Headache Frequency",
+        xlab = "Headache Frequency",
+        ylab = "Sleepless Nights")
+```
+Skip Breakfast
+```{r}
+boxplot(SleeplessNightsInAWeek ~ BreakfastSkip, data = df,
+        main = "Sleepless Nights by Breakfast Skip",
+        xlab = "Breakfast Skip",
+        ylab = "Sleepless Nights")
+```
+Dinner Time
+```{r}
+boxplot(SleeplessNightsInAWeek ~ DinnerTime, data = df,
+        main = "Sleepless Nights by Dinner Time",
+        xlab = "Dinner Time",
+        ylab = "Sleepless Nights")
+```
+One Hot Encoding on columns such as Gender, Branch and Year
+```{r}
+categorical_cols1 <- c("Gender", "Branch", "Year")
+
+encoded_data1 <- cbind(df[, !names(df) %in% categorical_cols1], 
+                      model.matrix(~ . - 1, data = df[categorical_cols1]))
+
+head(encoded_data1)
+```
+Label Encoding on columns Hours Of Sleep, Naps In A week, Daily Steps, Hours Of EC Devices Before Sleep, Headache Frequency, Breakfast Skip, Dinner Time
+```{r}
+categorical_cols2 <- c("HoursOfSleep", "NapsInAweek", "DailySteps", "HoursOfECDevicesBeforeSleep", "HeadacheFrequency","BreakfastSkip","DinnerTime")
+
+# Define a function for label encoding
+label_encode <- function(x) {
+  levels <- unique(x)
+  as.integer(factor(x, levels = levels))
+}
+
+# Apply label encoding to each categorical column
+for (col in categorical_cols2) {
+  encoded_data1[[col]] <- label_encode(encoded_data1[[col]])
+}
+
+# View the encoded data
+head(encoded_data1)
+```
+Correlation Data
+```{r}
+cor_data = cor(encoded_data1)
+ 
+print("Correlation matrix")
+print(cor_data)
+```
+```{r}
+library(corrplot)
+
+correlation_matrix <- cor(encoded_data1)
+
+corrplot::corrplot(correlation_matrix, method = "color", tl.cex = 0.5)
+```
