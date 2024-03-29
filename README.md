@@ -31,6 +31,7 @@ Contributions to this project are welcome! If you have suggestions for improveme
 For any questions or feedback, feel free to reach out:
 
 - Sneha Jain - [GitHub](https://github.com/JainSneha6) | [LinkedIn](https://www.linkedin.com/in/sneha-jain-473357261/)
+- Siddhartha Chakrabarty - [GitHub](https://github.com/SiddharthaChakrabarty) | [LinkedIn]()
 - [Project Repository](https://github.com/JainSneha6/Sleep-Survey-Analysis)
 
 Happy analyzing! 📊
