@@ -9,7 +9,6 @@ This project utilizes R programming language to analyze sleep patterns and sched
 ## Project Structure
 
 - `SleepAndLifestyleAnalysis.Rmd`: R Markdown file containing the analysis code and explanations.
-- `SleepAndLifestyleAnalysis.html`: HTML file generated from the R Markdown file, showcasing the analysis results.
 
 ## How to Use
 
@@ -31,7 +30,7 @@ Contributions to this project are welcome! If you have suggestions for improveme
 For any questions or feedback, feel free to reach out:
 
 - Sneha Jain - [GitHub](https://github.com/JainSneha6) | [LinkedIn](https://www.linkedin.com/in/sneha-jain-473357261/)
-- Siddhartha Chakrabarty - [GitHub](https://github.com/SiddharthaChakrabarty) | [LinkedIn](https://www.linkedin.com/in/siddhartha-chakrabarty/)
+- Siddhartha Chakrabarty - [GitHub](https://github.com/SiddharthaChakrabarty) | [LinkedIn](www.linkedin.com/in/siddharthachakrabarty)
 - [Project Repository](https://github.com/JainSneha6/Sleep-Survey-Analysis)
 
 Happy analyzing! 📊
