@@ -7,59 +7,62 @@ output:
   word_document: default
 ---
 
-Importing the dataset
+**Importing the dataset**
 
 ```{r}
-df<-read.csv("C:/Users/Sneha Jain/Downloads/Sleep Analysis Survey (Responses) - Form Responses 1.csv")
+df<-read.csv("D:/VIT-4/DS/Sleep Analysis Survey (Responses) (2).csv")
 head(df)
 ```
-Name of the columns
+**Name of the columns**
 
 ```{r}
 names(df)
 ```
-Changing the column names
+**Changing the column names**
 
 ```{r}
 names(df)<-c('Timestamp','Gender','Age','Year','Branch','HoursOfSleep','QualityOfSleep','NapsInAweek', 'PhysicalActivityLevel', 'StressLevel','DailySteps','HoursOfECDevicesBeforeSleep','HeadacheFrequency', 'BreakfastSkip', 'DinnerTime','SleeplessNightsInAWeek','Feedback')
 ```
 
 
-Seeing the modified names
+**Seeing the modified names**
 
 ```{r}
 names(df)
 ```
 
-First 6 columns of dataset
+**First 6 columns of dataset**
+
 ```{r}
 head(df)
 ```
 
-Removing timestamp and feedback from dataframe.
+**Removing timestamp and feedback from dataframe.**
 ```{r}
 df <- df[, !(names(df) %in% c("Timestamp", "Feedback"))]
 ```
 
 
-Checking the first 6 columns 
+**Checking the first 6 columns**
 ```{r}
 head(df)
 ```
 
-Count of male and female in gender column
+
+**Count of male and female in gender column**
 
 ```{r}
 count1 <- table(df$Gender, df$SleeplessNightsInAWeek)
 count1
 ```
 
-Gender Vs Sleepless Nights
+**Distribution of Gender**
 ```{r}
 library("ggplot2")
+
 ggplot(df, aes(x = Gender, fill = SleeplessNightsInAWeek)) +
   geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
-  labs(title = "Gender vs Sleepless Nights", x = "Gender", y = "Sleepless nights") + 
+  labs(title = "Distribution of Gender", x = "Gender", y = "") + 
   theme_minimal()+theme(
     plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
     axis.title.x = element_text(size = 14, face = "bold"),
@@ -67,18 +70,37 @@ ggplot(df, aes(x = Gender, fill = SleeplessNightsInAWeek)) +
     axis.text = element_text(size = 12)
   )
 ```
+```{r}
+library(ggplot2)
 
-Counts in age column
+ggplot(df, aes(x = "", fill = Gender)) +
+  geom_bar(width = 1) +
+  coord_polar("y") +
+  labs(title = "Distribution of Gender", fill = "Gender") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12)
+  )
+
+
+
+```
+
+**Count of various ages in age column**
+
+
 ```{r}
 count2 <- table(df$Age, df$SleeplessNightsInAWeek)
 count2
 ```
 
-Age Vs Sleepless Nights
+**Distribution of Ages**
 ```{r}
 ggplot(df, aes(x = Age, fill = SleeplessNightsInAWeek)) +
   geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
-  labs(title = "Age vs Sleepless Nights", x = "Age", y = "Sleepless nights") + 
+  labs(title = "Distribution of Ages", x = "Age", y = "") + 
   theme_minimal()+theme(
     plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
     axis.title.x = element_text(size = 14, face = "bold"),
@@ -87,17 +109,35 @@ ggplot(df, aes(x = Age, fill = SleeplessNightsInAWeek)) +
   )+scale_x_continuous(breaks = unique(df$Age))
 ```
 
-Counts in Year Column
+```{r}
+
+ggplot(df, aes(x = "", fill = factor(Age))) +
+  geom_bar(width = 1) +
+  coord_polar("y") +
+  labs(title = "Distribution of Ages", fill = "Sleepless nights") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12)
+  ) +
+  scale_fill_manual(values = c("#6BCAE2", "#F8766D", "#00BA38", "#FFB200", "#619CFF", "#FFD400", "#7CAE00", "#A876FF"))
+
+```
+
+
+**Count of First Year, Second Year, Third Year and BTech**
+
 ```{r}
 count3 <- table(df$Year, df$SleeplessNightsInAWeek)
 count3
 ```
 
-Year Vs Sleepless Nights
+**Distribution of Engineering Years**
 ```{r}
 ggplot(df, aes(x = Year, fill = SleeplessNightsInAWeek)) +
   geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
-  labs(title = "Year vs Sleepless Nights", x = "Year", y = "Sleepless nights") + 
+  labs(title = "Distribution of Engineering Years", x = "Year", y = "") + 
   theme_minimal()+theme(
     plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
     axis.title.x = element_text(size = 14, face = "bold"),
@@ -106,17 +146,34 @@ ggplot(df, aes(x = Year, fill = SleeplessNightsInAWeek)) +
   )
 ```
 
-Counts in Branch Column
+```{r}
+
+ggplot(df, aes(x = "", fill = factor(Year))) +
+  geom_bar(width = 1) +
+  coord_polar("y") +
+  labs(title = "Distribution of Engineering Years", fill = "Sleepless nights") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12)
+  ) +
+  scale_fill_manual(values = c("#6BCAE2", "#F8766D", "#00BA38", "#FFB200"))
+```
+
+
+
+**Count of CS-AIML, Chem & IC, Comp, ENTC, IT, and Mech.**
 ```{r}
 count4 <- table(df$Branch, df$SleeplessNightsInAWeek)
 count4
 ```
 
-Branch Vs Sleepless Nights
+**Distribution of Branches**
 ```{r}
 ggplot(df, aes(x = Branch, fill = SleeplessNightsInAWeek)) +
   geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
-  labs(title = "Branch vs Sleepless Nights", x = "Branch", y = "Sleepless nights") + 
+  labs(title = "Distribution of Branches", x = "Branch", y = "") + 
   theme_minimal()+theme(
     plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
     axis.title.x = element_text(size = 14, face = "bold"),
@@ -125,17 +182,37 @@ ggplot(df, aes(x = Branch, fill = SleeplessNightsInAWeek)) +
   )
 ```
 
-Counts in Hours of Sleep Column
+```{r}
+ggplot(df, aes(x = "", fill = factor(Branch))) +
+  geom_bar(width = 1) +
+  coord_polar("y") +
+  labs(title = "Distribution of Branches", fill = "Sleepless nights") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12)
+  ) +
+  scale_fill_manual(values = c("#6BCAE2", "#F8766D", "#00BA38", "#FFB200", "#619CFF","#ADD8E6")) 
+```
+
+
+
+**Count of Unique Values in Hours of Sleep Column**
+
 ```{r}
 count5 <- table(df$HoursOfSleep, df$SleeplessNightsInAWeek)
 count5
 ```
 
-Hours of Sleep Vs Sleepless Nights
+
+
+**Distribution of Hours of Sleep**
+
 ```{r}
 ggplot(df, aes(x = HoursOfSleep, fill = SleeplessNightsInAWeek)) +
   geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
-  labs(title = "Hours Of Sleep vs Sleepless Nights", x = "Hours Of Sleep", y = "Sleepless nights") + 
+  labs(title = "Distribution of Hours of Sleep", x = "Hours Of Sleep", y = "") + 
   theme_minimal()+theme(
     plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
     axis.title.x = element_text(size = 14, face = "bold"),
@@ -144,17 +221,32 @@ ggplot(df, aes(x = HoursOfSleep, fill = SleeplessNightsInAWeek)) +
   )
 ```
 
-Counts in Quality of Sleep Column
+
+```{r}
+ggplot(df, aes(x = "", fill = factor(HoursOfSleep))) +
+  geom_bar(width = 1) +
+  coord_polar("y") +
+  labs(title = "Distribution of Hours of Sleep", fill = "Hours of Sleep")+
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12)
+  ) +
+  scale_fill_manual(values = c("#6BCAE2", "#F8766D", "#00BA38", "#FFB200")) 
+```
+
+**Count of Unique Values in Quality Of Sleep Column**
 ```{r}
 count6 <- table(df$QualityOfSleep, df$SleeplessNightsInAWeek)
 count6
 ```
 
-Quality of Sleep Vs Sleepless Nights
+**Distribution of Quality Of Sleep**
 ```{r}
 ggplot(df, aes(x = QualityOfSleep, fill = SleeplessNightsInAWeek)) +
   geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
-  labs(title = "Quality Of Sleep vs Sleepless Nights", x = "Quality Of Sleep", y = "Sleepless nights") + 
+  labs(title = "Distribution of Quality Of Sleep", x = "Quality Of Sleep", y = "") + 
   theme_minimal()+theme(
     plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
     axis.title.x = element_text(size = 14, face = "bold"),
@@ -163,17 +255,32 @@ ggplot(df, aes(x = QualityOfSleep, fill = SleeplessNightsInAWeek)) +
   )+scale_x_continuous(breaks = unique(df$QualityOfSleep))
 ```
 
-Counts in Nap Frequency Column
+```{r}
+ggplot(df, aes(x = "", fill = factor(QualityOfSleep))) +
+  geom_bar(width = 1) +
+  coord_polar("y") +
+  labs(title = "Distribution of QualityOfSleep", fill = "QualityOfSleep")+
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12)
+  ) +
+  scale_fill_manual(values = c("#6BCAE2", "#F8766D", "#00BA38", "#FFB200","#619CFF","#FFD400","#FFB6C1","#87CEEB","#FFD700","#98FB98"))  
+```
+
+
+**Count of Unique Values in Nap Frequency Column**
 ```{r}
 count7 <- table(df$NapsInAweek, df$SleeplessNightsInAWeek)
 count7
 ```
 
-Nap Frequency Vs Sleepless Nights
+**Distribution of Naps In A Week**
 ```{r}
 ggplot(df, aes(x = NapsInAweek, fill = SleeplessNightsInAWeek)) +
   geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
-  labs(title = "Naps In Week vs Sleepless Nights", x = "Naps In Week", y = "Sleepless nights") + 
+  labs(title = "Distribution of Naps In A Week", x = "Naps In Week", y = "") + 
   theme_minimal()+theme(
     plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
     axis.title.x = element_text(size = 14, face = "bold"),
@@ -181,18 +288,33 @@ ggplot(df, aes(x = NapsInAweek, fill = SleeplessNightsInAWeek)) +
     axis.text = element_text(size = 12)
   )
 ```
+```{r}
+ggplot(df, aes(x = "", fill = factor(NapsInAweek))) +
+  geom_bar(width = 1) +
+  coord_polar("y") +
+  labs(title = "Distribution of Naps In A Week", fill = "Naps In A Week")+
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12)
+  ) +
+  scale_fill_manual(values = c("#6BCAE2", "#F8766D", "#00BA38", "#FFB200"))  
+```
 
-Counts in Physical Activity Column
+
+
+**Count of Unique Values in Physical Activity Column**
 ```{r}
 count8 <- table(df$PhysicalActivityLevel, df$SleeplessNightsInAWeek)
 count8
 ```
 
-Physical Activity Level Vs Sleepless Nights
+**Distribution of Physical Activity Level**
 ```{r}
 ggplot(df, aes(x = PhysicalActivityLevel, fill = SleeplessNightsInAWeek)) +
   geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
-  labs(title = "Physical Activity Level vs Sleepless Nights", x = "Physical Activity Level", y = "Sleepless nights") + 
+  labs(title = "Distribution of Physical Activity Level", x = "Physical Activity Level", y = "") + 
   theme_minimal()+theme(
     plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
     axis.title.x = element_text(size = 14, face = "bold"),
@@ -201,17 +323,32 @@ ggplot(df, aes(x = PhysicalActivityLevel, fill = SleeplessNightsInAWeek)) +
   )+ scale_x_continuous(breaks = unique(df$PhysicalActivityLevel))
 ```
 
-Stress Level Vs Sleepless Nights
+```{r}
+ggplot(df, aes(x = "", fill = factor(PhysicalActivityLevel))) +
+  geom_bar(width = 1) +
+  coord_polar("y") +
+  labs(title = "Distribution of Physical Activity Level", fill = "Physical Activity Level")+
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12)
+  ) +
+  scale_fill_manual(values = c("#6BCAE2", "#F8766D", "#00BA38", "#FFB200","#619CFF","#FFD400","#FFB6C1","#87CEEB","#FFD700","#98FB98"))  
+```
+
+
+**Count of Stress Level in Physical Activity Column**
 ```{r}
 count9 <- table(df$StressLevel, df$SleeplessNightsInAWeek)
 count9
 ```
 
-Stress Level Vs Sleepless Nights
+**Distribution of Stress Level**
 ```{r}
 ggplot(df, aes(x = StressLevel, fill = SleeplessNightsInAWeek)) +
   geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
-  labs(title = "Stress Level vs Sleepless Nights", x = "Stress Level", y = "Sleepless nights") + 
+  labs(title = "Distribution of Stress Level", x = "Stress Level", y = "") + 
   theme_minimal()+theme(
     plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
     axis.title.x = element_text(size = 14, face = "bold"),
@@ -220,17 +357,33 @@ ggplot(df, aes(x = StressLevel, fill = SleeplessNightsInAWeek)) +
   )+ scale_x_continuous(breaks = unique(df$StressLevel))
 ```
 
-Counts in Daily Steps Column
+
+```{r}
+ggplot(df, aes(x = "", fill = factor(StressLevel))) +
+  geom_bar(width = 1) +
+  coord_polar("y") +
+  labs(title = "Distribution of Stress Level", fill = "Stress Level")+
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12)
+  ) +
+  scale_fill_manual(values = c("#6BCAE2", "#F8766D", "#00BA38", "#FFB200","#619CFF","#FFD400","#FFB6C1","#87CEEB","#FFD700","#98FB98"))  
+```
+
+
+**Count of Unique Values in Daily Steps Column**
 ```{r}
 count10 <- table(df$DailySteps, df$SleeplessNightsInAWeek)
 count10
 ```
 
-Daily Steps Vs Sleepless Nights
+**Distribution of Daily Steps**
 ```{r}
 ggplot(df, aes(x = DailySteps, fill = SleeplessNightsInAWeek)) +
   geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
-  labs(title = "Daily Steps vs Sleepless Nights", x = "Daily Steps", y = "Sleepless nights") + 
+  labs(title = "Distribution of Daily Steps", x = "Daily Steps", y = "") + 
   theme_minimal()+theme(
     plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
     axis.title.x = element_text(size = 14, face = "bold"),
@@ -239,17 +392,32 @@ ggplot(df, aes(x = DailySteps, fill = SleeplessNightsInAWeek)) +
   )
 ```
 
-Counts in Hours of EC devices Column
+```{r}
+ggplot(df, aes(x = "", fill = factor(DailySteps))) +
+  geom_bar(width = 1) +
+  coord_polar("y") +
+  labs(title = "Distribution of Daily Steps", fill = "Daily Steps")+
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12)
+  ) +
+  scale_fill_manual(values = c("#6BCAE2", "#F8766D", "#00BA38", "#FFB200","#619CFF","#98FB98"))  # Adjust colors if needed
+```
+
+
+**Count of Unique Values in Hours of EC devices Column**
 ```{r}
 count11 <- table(df$HoursOfECDevicesBeforeSleep, df$SleeplessNightsInAWeek)
 count11
 ```
 
-Hours Of EC devices Vs Sleepless Nights
+**Distribution of Hours of EC Devices** 
 ```{r}
 ggplot(df, aes(x = HoursOfECDevicesBeforeSleep, fill = SleeplessNightsInAWeek)) +
   geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
-  labs(title = "Hours Of EC Devices Before Sleep vs Sleepless Nights", x = "Hours Of EC Devices Before Sleep", y = "Sleepless nights") + 
+  labs(title = "Distribution of Hours of EC Devices", x = "Hours Of EC Devices Before Sleep", y = "") + 
   theme_minimal()+theme(
     plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
     axis.title.x = element_text(size = 14, face = "bold"),
@@ -258,17 +426,32 @@ ggplot(df, aes(x = HoursOfECDevicesBeforeSleep, fill = SleeplessNightsInAWeek)) 
   )
 ```
 
-Counts in Headache Frequency Column
+```{r}
+ggplot(df, aes(x = "", fill = factor(HoursOfECDevicesBeforeSleep))) +
+  geom_bar(width = 1) +
+  coord_polar("y") +
+  labs(title = "Distribution of Hours of EC Devices Before Sleep", fill = "Hours of EC Devices Before Sleep")+
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12)
+  ) +
+  scale_fill_manual(values = c("#6BCAE2", "#F8766D", "#00BA38", "#FFB200","#619CFF"))  
+```
+
+
+**Count of Unique Values in Headache Frequency Column**
 ```{r}
 count12 <- table(df$HeadacheFrequency, df$SleeplessNightsInAWeek)
 count12
 ```
 
-Headache Frequency Vs Sleepless Nights
+**Distribution of Headache Frequency**
 ```{r}
 ggplot(df, aes(x = HeadacheFrequency, fill = SleeplessNightsInAWeek)) +
   geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
-  labs(title = "Headache Frequency vs Sleepless Nights", x = "Headache Frequency", y = "Sleepless nights") + 
+  labs(title = "Distribution of Headache Frequency", x = "Headache Frequency", y = "") + 
   theme_minimal()+theme(
     plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
     axis.title.x = element_text(size = 14, face = "bold"),
@@ -277,17 +460,33 @@ ggplot(df, aes(x = HeadacheFrequency, fill = SleeplessNightsInAWeek)) +
   )
 ```
 
-Counts in Breakfast Skip Column
+```{r}
+ggplot(df, aes(x = "", fill = factor(HeadacheFrequency))) +
+  geom_bar(width = 1) +
+  coord_polar("y") +
+  labs(title = "Distribution of Headache Frequency", fill = "Headache Frequency")+
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12)
+  ) +
+  scale_fill_manual(values = c("#6BCAE2", "#F8766D", "#00BA38", "#FFB200","#619CFF"))
+```
+
+
+
+**Count of Unique Values in Breakfast Skip Column**
 ```{r}
 count13 <- table(df$BreakfastSkip, df$SleeplessNightsInAWeek)
 count13
 ```
 
-Breakfast Skip Vs Sleepless Nights
+**Distribution of Breakfast Skip**
 ```{r}
 ggplot(df, aes(x = BreakfastSkip, fill = SleeplessNightsInAWeek)) +
   geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
-  labs(title = "Breakfast Skip vs Sleepless Nights", x = "Breakfast Skip", y = "Sleepless nights") + 
+  labs(title = "Distribution of Breakfast Skip", x = "Breakfast Skip", y = "") + 
   theme_minimal()+theme(
     plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
     axis.title.x = element_text(size = 14, face = "bold"),
@@ -296,17 +495,32 @@ ggplot(df, aes(x = BreakfastSkip, fill = SleeplessNightsInAWeek)) +
   )
 ```
 
-Counts in Dinner Time Column
+```{r}
+ggplot(df, aes(x = "", fill = factor(BreakfastSkip))) +
+  geom_bar(width = 1) +
+  coord_polar("y") +
+  labs(title = "Distribution of Breakfast Skip", fill = "Breakfast Skip")+
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12)
+  ) +
+  scale_fill_manual(values = c("#6BCAE2", "#F8766D", "#00BA38", "#FFB200","#619CFF"))
+```
+
+
+**Count of Unique Values in Dinner Time Column**
 ```{r}
 count14 <- table(df$DinnerTime, df$SleeplessNightsInAWeek)
 count14
 ```
 
-Dinner Time Vs Sleepless Nights
+**Distribution of Dinner Time**
 ```{r}
 ggplot(df, aes(x = DinnerTime, fill = SleeplessNightsInAWeek)) +
   geom_bar(color = "black", fill = "#6BCAE2", width = 0.4) +  
-  labs(title = "Dinner Time vs Sleepless Nights", x = "Dinner Time", y = "Sleepless nights") + 
+  labs(title = "Distribution of Dinner Time", x = "Dinner Time", y = "") + 
   theme_minimal()+theme(
     plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
     axis.title.x = element_text(size = 14, face = "bold"),
@@ -314,100 +528,599 @@ ggplot(df, aes(x = DinnerTime, fill = SleeplessNightsInAWeek)) +
     axis.text = element_text(size = 12)
   )
 ```
-Identifying Outliers 
 
-Gender Column
+```{r}
+ggplot(df, aes(x = "", fill = factor(DinnerTime))) +
+  geom_bar(width = 1) +
+  coord_polar("y") +
+  labs(title = "Distribution of Dinner Time", fill = "Dinner Time")+
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 20, face = "bold", hjust = 0.5),
+    legend.title = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12)
+  ) +
+  scale_fill_manual(values = c("#6BCAE2", "#F8766D", "#00BA38", "#FFB200","#619CFF"))
+```
+
+
+
+
+**Identifying Outliers**
+
+
+
+
+
+
+**Gender Column**
 ```{r}
 boxplot(SleeplessNightsInAWeek ~ Gender, data = df,
         main = "Sleepless Nights by Gender",
         xlab = "Gender",
         ylab = "Sleepless Nights")
 ```
-Age column
+
+
+
+
+
+**Age column**
 ```{r}
 boxplot(SleeplessNightsInAWeek ~ Age, data = df,
         main = "Sleepless Nights by Age",
         xlab = "Age",
         ylab = "Sleepless Nights")
 ```
-Branch Column
+**Branch Column**
 ```{r}
 boxplot(SleeplessNightsInAWeek ~ Branch, data = df,
         main = "Sleepless Nights by Branch",
         xlab = "Branch",
         ylab = "Sleepless Nights")
 ```
-Hours Of Sleep Column
+**Hours Of Sleep Column**
 ```{r}
 boxplot(SleeplessNightsInAWeek ~ HoursOfSleep, data = df,
         main = "Sleepless Nights by Hours Of Sleep",
         xlab = "Hours Of Sleep",
         ylab = "Sleepless Nights")
+
+
 ```
-Quality Of Sleep Column
+
+
+**Quality of Sleep Column**
 ```{r}
 boxplot(SleeplessNightsInAWeek ~ QualityOfSleep, data = df,
         main = "Sleepless Nights by Quality Of Sleep",
         xlab = "Quality Of Sleep",
         ylab = "Sleepless Nights")
 ```
-Naps In A Week Column
+
+
+**Naps In A Week Column**
 ```{r}
 boxplot(SleeplessNightsInAWeek ~ NapsInAweek, data = df,
         main = "Sleepless Nights by Naps In A Week",
         xlab = "Naps In A Week",
         ylab = "Sleepless Nights")
 ```
-Physical Activity Level
+
+
+**Physical Activity Level**
 ```{r}
 boxplot(SleeplessNightsInAWeek ~ PhysicalActivityLevel, data = df,
         main = "Sleepless Nights by Physical Activity Level",
         xlab = "Physical Activity Level",
         ylab = "Sleepless Nights")
 ```
-Stress Level
+
+
+**Stress Level**
 ```{r}
 boxplot(SleeplessNightsInAWeek ~ StressLevel, data = df,
         main = "Sleepless Nights by Stress Level",
         xlab = "Stress Level",
         ylab = "Sleepless Nights")
 ```
-Daily Steps
+
+
+
+**Daily Steps**
 ```{r}
 boxplot(SleeplessNightsInAWeek ~ DailySteps, data = df,
         main = "Sleepless Nights by Daily Steps",
         xlab = "Daily Steps",
         ylab = "Sleepless Nights")
 ```
-Hours of EC Devices Before Sleep
+
+
+**Hours of EC Devices Before Sleep**
 ```{r}
 boxplot(SleeplessNightsInAWeek ~ HoursOfECDevicesBeforeSleep, data = df,
         main = "Sleepless Nights by Hours of EC Devices Before Sleep",
         xlab = "Hours of EC Devices Before Sleep",
         ylab = "Sleepless Nights")
 ```
-Headache Frequency
+
+
+**Headache Frequency**
 ```{r}
 boxplot(SleeplessNightsInAWeek ~ HeadacheFrequency, data = df,
         main = "Sleepless Nights by Headache Frequency",
         xlab = "Headache Frequency",
         ylab = "Sleepless Nights")
 ```
-Skip Breakfast
+
+
+**Skip Breakfast**
 ```{r}
 boxplot(SleeplessNightsInAWeek ~ BreakfastSkip, data = df,
         main = "Sleepless Nights by Breakfast Skip",
         xlab = "Breakfast Skip",
         ylab = "Sleepless Nights")
 ```
-Dinner Time
+
+
+**Dinner Time**
 ```{r}
 boxplot(SleeplessNightsInAWeek ~ DinnerTime, data = df,
         main = "Sleepless Nights by Dinner Time",
         xlab = "Dinner Time",
         ylab = "Sleepless Nights")
 ```
-One Hot Encoding on columns such as Gender, Branch and Year
+
+
+**Correlation of Gender vs. Sleepless Nights**
+
+```{r}
+
+ggplot(df, aes(x = Gender, y = SleeplessNightsInAWeek, color = Gender)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "Gender vs. Sleepless Nights",
+       x = "Gender",
+       y = "Sleepless Nights in a Week") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+
+**Correlation of Age vs. Sleepless Nights**
+
+
+```{r}
+
+ggplot(df, aes(x = Age, y = SleeplessNightsInAWeek, color = Age)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_gradient(low = "orange", high = "red") + 
+  labs(title = "Age vs. Sleepless Nights",
+       x = "Age",
+       y = "Sleepless Nights in a Week") +
+  theme_minimal() +
+  theme(legend.position = "none",
+        axis.title = element_text(size = 12, face = "bold"),
+        axis.text = element_text(size = 10)) 
+```
+
+
+**Correlation of Year vs. Sleepless Nights**
+
+
+```{r}
+ggplot(df, aes(x = Year, y = SleeplessNightsInAWeek, color = Year)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "Year vs. Sleepless Nights",
+       x = "Year",
+       y = "Sleepless Nights in a Week") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+
+**Correlation of Branch vs. Sleepless Nights** 
+
+
+```{r}
+ggplot(df, aes(x = Branch, y = SleeplessNightsInAWeek, color = Branch)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") +
+  labs(title = "Branch vs. Sleepless Nights",
+       x = "Branch",
+       y = "Sleepless Nights in a Week") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+
+
+**Correlation of Hours of Sleep vs. Sleepless Nights**
+
+
+```{r}
+ggplot(df, aes(x = HoursOfSleep, y = SleeplessNightsInAWeek, color = HoursOfSleep)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "HoursOfSleep vs. Sleepless Nights",
+       x = "HoursOfSleep",
+       y = "Sleepless Nights in a Week") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+**Correlation of Quality Of Sleep vs. Sleepless Nights**
+
+
+```{r}
+ggplot(df, aes(x = QualityOfSleep, y = SleeplessNightsInAWeek, color = QualityOfSleep)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) +
+  scale_color_gradient(low = "orange", high = "red") + 
+  labs(title = "QualityOfSleep vs. Sleepless Nights",
+       x = "QualityOfSleep",
+       y = "Sleepless Nights in a Week") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+
+**Correlation of Naps In A Week vs. Sleepless Nights**
+
+
+```{r}
+ggplot(df, aes(x = NapsInAweek, y = SleeplessNightsInAWeek, color = NapsInAweek)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "NapsInAweek vs. Sleepless Nights",
+       x = "NapsInAweek",
+       y = "Sleepless Nights in a Week") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+
+**Correlation of Physical Activity Level vs. Sleepless Nights**
+
+
+```{r}
+ggplot(df, aes(x = PhysicalActivityLevel, y = SleeplessNightsInAWeek, color = PhysicalActivityLevel)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_gradient(low = "orange", high = "red") + 
+  labs(title = "PhysicalActivityLevel vs. Sleepless Nights",
+       x = "PhysicalActivityLevel",
+       y = "Sleepless Nights in a Week") +
+  theme_minimal() +
+  theme(legend.position = "none",
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+**Correlation of Stress Level and Sleepless Nights**
+
+
+```{r}
+ggplot(df, aes(x = StressLevel, y = SleeplessNightsInAWeek, color = StressLevel)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_gradient(low = "orange", high = "red") + 
+  labs(title = "StressLevel vs. Sleepless Nights",
+       x = "StressLevel",
+       y = "Sleepless Nights in a Week") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+**Correlation of Daily Steps vs. Sleepless Nights**
+
+
+```{r}
+ggplot(df, aes(x = DailySteps, y = SleeplessNightsInAWeek, color = DailySteps)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "DailySteps vs. Sleepless Nights",
+       x = "DailySteps",
+       y = "Sleepless Nights in a Week") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10))
+```
+
+**Correlation of Hours of EC Devices Before Sleep and Sleepless Nights**
+
+
+```{r}
+ggplot(df, aes(x = HoursOfECDevicesBeforeSleep, y = SleeplessNightsInAWeek, color = HoursOfECDevicesBeforeSleep)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "HoursOfECDevicesBeforeSleep vs. Sleepless Nights",
+       x = "HoursOfECDevicesBeforeSleep",
+       y = "Sleepless Nights in a Week") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+**Correlation of Headache Frequency vs. Sleepless Nights**
+
+
+```{r}
+ggplot(df, aes(x = HeadacheFrequency, y = SleeplessNightsInAWeek, color = HeadacheFrequency)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "HeadacheFrequency vs. Sleepless Nights",
+       x = "HeadacheFrequency",
+       y = "Sleepless Nights in a Week") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+**Correlation of Breakfast Skip vs. Sleepless Nights**
+
+
+```{r}
+ggplot(df, aes(x = BreakfastSkip, y = SleeplessNightsInAWeek, color = BreakfastSkip)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "BreakfastSkip vs. Sleepless Nights",
+       x = "BreakfastSkip",
+       y = "Sleepless Nights in a Week") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+**Correlation of Dinner Time vs. Sleepless Nights**
+
+
+```{r}
+ggplot(df, aes(x = DinnerTime, y = SleeplessNightsInAWeek, color = DinnerTime)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "DinnerTime vs. Sleepless Nights",
+       x = "DinnerTime",
+       y = "Sleepless Nights in a Week") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+
+**Correlation of Gender vs. Quality Of Sleep**
+
+
+```{r}
+ggplot(df, aes(x = Gender, y = QualityOfSleep, color = Gender)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "Gender vs. Quality Of Sleeps",
+       x = "Gender",
+       y = "Quality Of Sleep") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+
+**Correlation of Age vs. Quality Of Sleep**
+
+```{r}
+
+ggplot(df, aes(x = Age, y = QualityOfSleep, color = Age)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_gradient(low = "orange", high = "red") +
+  labs(title = "Age vs. Quality Of Sleep",
+       x = "Age",
+       y = "Quality Of Sleep") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+
+**Correlation of Year vs. Quality Of Sleep**
+
+
+```{r}
+ggplot(df, aes(x = Year, y = QualityOfSleep, color = Year)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "Year vs. Quality Of Sleep",
+       x = "Year",
+       y = "Quality Of Sleep ") +
+  theme_minimal() +
+  theme(legend.position = "none",
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10))
+```
+
+**Correlation of Branch vs. Quality Of Sleep**
+
+
+```{r}
+ggplot(df, aes(x = Branch, y = QualityOfSleep, color = Branch)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "Branch vs. Quality Of Sleep",
+       x = "Branch",
+       y = "Quality Of Sleep") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+**Correlation of Hours of Sleep vs. Quality of Sleep**
+
+
+```{r}
+ggplot(df, aes(x = HoursOfSleep, y = QualityOfSleep, color = HoursOfSleep)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "HoursOfSleep vs. Quality Of Sleep",
+       x = "HoursOfSleep",
+       y = "Quality Of Sleep") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+**Correlation of Naps In A Week vs. Quality Of Sleep**
+
+
+```{r}
+ggplot(df, aes(x = NapsInAweek, y = QualityOfSleep, color = NapsInAweek)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "NapsInAweek vs. Quality Of Sleep",
+       x = "NapsInAweek",
+       y = "Quality Of Sleep") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+**Correlation of Physical Activity Level vs. Quality Of Sleep**
+
+
+```{r}
+ggplot(df, aes(x = PhysicalActivityLevel, y = QualityOfSleep, color = PhysicalActivityLevel)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_gradient(low = "orange", high = "red") + 
+  labs(title = "PhysicalActivityLevel vs. Quality Of Sleep",
+       x = "PhysicalActivityLevel",
+       y = "Quality Of Sleep") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+**Correlation of Stress Level vs. Quality Of Sleep**
+
+
+```{r}
+ggplot(df, aes(x = StressLevel, y = QualityOfSleep, color = StressLevel)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_gradient(low = "orange", high = "red") + 
+  labs(title = "StressLevel vs. Quality Of Sleep",
+       x = "StressLevel",
+       y = "Quality Of Sleep") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+**Correlation of Daily Steps vs. Quality Of Sleep**
+
+
+```{r}
+ggplot(df, aes(x = DailySteps, y = QualityOfSleep, color = DailySteps)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "DailySteps vs. Quality Of Sleep",
+       x = "DailySteps",
+       y = "Quality Of Sleep") +
+  theme_minimal() +
+  theme(legend.position = "none",
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10))
+```
+
+**Correlation of Hours of EC Devices Before Sleep vs. Quality Of Sleep**
+
+
+```{r}
+ggplot(df, aes(x = HoursOfECDevicesBeforeSleep, y = QualityOfSleep, color = HoursOfECDevicesBeforeSleep)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "HoursOfECDevicesBeforeSleep vs. Quality Of Sleep",
+       x = "HoursOfECDevicesBeforeSleep",
+       y = "Quality Of Sleep") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"), 
+        axis.text = element_text(size = 10)) 
+```
+
+**Correlation of Headache Frequency vs. Quality Of Sleep**
+
+
+```{r}
+ggplot(df, aes(x = HeadacheFrequency, y = QualityOfSleep, color = HeadacheFrequency)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "HeadacheFrequency vs. Quality Of Sleep",
+       x = "HeadacheFrequency",
+       y = "Quality Of Sleep") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"),
+        axis.text = element_text(size = 10)) 
+```
+
+**Correlation of Breakfast Skip vs. Quality Of Sleep**
+
+
+
+```{r}
+ggplot(df, aes(x = BreakfastSkip, y = QualityOfSleep, color = BreakfastSkip)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "BreakfastSkip vs. Quality Of Sleep",
+       x = "BreakfastSkip",
+       y = "Quality Of Sleep") +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        axis.title = element_text(size = 12, face = "bold"),
+        axis.text = element_text(size = 10))
+```
+
+
+**Correlation of Dinner Time vs. Quality Of Sleep**
+
+
+```{r}
+ggplot(df, aes(x = DinnerTime, y = QualityOfSleep, color = DinnerTime)) +
+  geom_jitter(width = 0.3, height = 0, alpha = 0.7) + 
+  scale_color_brewer(palette = "Dark2") + 
+  labs(title = "DinnerTime vs. Quality Of Sleep",
+       x = "DinnerTime",
+       y = "Quality Of Sleep") +
+  theme_minimal() +
+  theme(legend.position = "none",
+        axis.title = element_text(size = 12, face = "bold"),
+        axis.text = element_text(size = 10)) 
+```
+
+
+**One Hot Encoding on columns such as Gender, Branch and Year**
+
+
 ```{r}
 categorical_cols1 <- c("Gender", "Branch", "Year")
 
@@ -416,31 +1129,53 @@ encoded_data1 <- cbind(df[, !names(df) %in% categorical_cols1],
 
 head(encoded_data1)
 ```
-Label Encoding on columns Hours Of Sleep, Naps In A week, Daily Steps, Hours Of EC Devices Before Sleep, Headache Frequency, Breakfast Skip, Dinner Time
+
+
+
+**Label Encoding on columns Hours Of Sleep, Naps In A week, Daily Steps, Hours Of EC Devices Before Sleep, Headache Frequency, Breakfast Skip, Dinner Time**
+
+
 ```{r}
 categorical_cols2 <- c("HoursOfSleep", "NapsInAweek", "DailySteps", "HoursOfECDevicesBeforeSleep", "HeadacheFrequency","BreakfastSkip","DinnerTime")
 
-# Define a function for label encoding
 label_encode <- function(x) {
   levels <- unique(x)
   as.integer(factor(x, levels = levels))
 }
 
-# Apply label encoding to each categorical column
 for (col in categorical_cols2) {
   encoded_data1[[col]] <- label_encode(encoded_data1[[col]])
 }
 
-# View the encoded data
 head(encoded_data1)
 ```
-Correlation Data
+
+**Summary of values in the encoded data**
+
+
+```{r}
+summary(encoded_data1)
+```
+
+
+**Correlation Data**
 ```{r}
 cor_data = cor(encoded_data1)
  
 print("Correlation matrix")
 print(cor_data)
 ```
+
+The correlation matrix shows the pairwise correlations between different variables in our dataset. When the value is close to 1 or -1, it will show a strong positive or negative correlation respectively.
+
+
+For example, the relationship b/w 'QualityOfSleep' and 'PhysicalActivity' is 0.214 which indicates a moderate positive correlation. When one will increase the other will also increase. Similarly, the relationship b/w 'QualityOfSleep' and 'StressLevel' is -0.261 which indicates a moderate negative correlation. When one will increase the other will decrease. 
+
+
+
+**Heatmap of the Correlation Matrix**
+
+
 ```{r}
 library(corrplot)
 
@@ -448,3 +1183,1065 @@ correlation_matrix <- cor(encoded_data1)
 
 corrplot::corrplot(correlation_matrix, method = "color", tl.cex = 0.5)
 ```
+
+**Pair plot of Quality Of Sleep, Sleepless Nights In A Week, Naps In A Week, and Hours Of Sleep**
+
+```{r}
+library(GGally)
+
+pairs_plot <- ggpairs(encoded_data1[, c("QualityOfSleep", "SleeplessNightsInAWeek", "NapsInAweek", "HoursOfSleep")],
+                    lower = list(continuous = "smooth"),
+                    diag = list(continuous = "density"),
+                    upper = list(continuous = "cor"),
+                    title = "Pairs Plot of Sleep Quality Variables",
+                    mapping = aes(color = "navy"),
+                    labels = c("Quality of Sleep", "Sleepless Nights In A Week", "Naps In A week", "Hours of Sleep"))
+
+print(pairs_plot)
+```
+
+
+1. "QualityOfSleep" and "SleeplessNightsInAWeek":
+    Correlation value: -0.455
+    Interpretation: This indicates a relatively strong negative correlation between the     quality of sleep and the number of sleepless nights in a week.
+    
+2. "QualityOfSleep" and "NapsInAweek":
+    Correlation value: 0.055
+    Interpretation: This indicates a very weak positive correlation between the quality     of sleep and the number of naps taken in a week. 
+    
+3. "QualityOfSleep" and "HoursOfSleep":
+    Correlation value: 0.166
+    Interpretation: This indicates a relatively weak positive correlation between the      quality of sleep and the number of hours slept per night. 
+    
+4. "SleeplessNightsInAWeek" and "HoursOfSleep":
+    Correlation value: -0.114
+    Interpretation: This indicates a weak negative correlation between the number of       sleepless nights in a week and the number of hours slept per night.
+
+
+
+**Pair plot of Quality Of Sleep, Sleepless Nights In A Week, Daily Steps , and Physical Activity Level**
+
+
+```{r}
+pairs_plot <- ggpairs(encoded_data1[, c("QualityOfSleep", "SleeplessNightsInAWeek", "DailySteps", "PhysicalActivityLevel")],
+                    lower = list(continuous = "smooth"),
+                    diag = list(continuous = "density"),
+                    upper = list(continuous = "cor"),
+                    title = "Pairs Plot of Physical activity-related variables",
+                    mapping = aes(color = "navy"),
+                    labels = c("Quality of Sleep", "Sleepless Nights In A Week", "Daily Steps", "Physical Activity Level"))
+
+print(pairs_plot)
+```
+
+1. "QualityOfSleep" and "SleeplessNightsInAWeek":
+    Correlation value: -0.455
+    Interpretation: This indicates a relatively strong negative correlation between the     quality of sleep and the number of sleepless nights in a week.
+
+2. "QualityOfSleep" and "DailySteps":
+    Correlation value: 0.031
+    Interpretation: This indicates a very weak positive correlation between the quality     of sleep and the number of daily steps taken.
+    
+3. "QualityOfSleep" and "PhysicalActivityLevel":
+    Correlation value: 0.214
+    Interpretation: This indicates a positive correlation between the quality of sleep     and the level of physical activity.
+    
+4. "SleeplessNightsInAWeek" and "DailySteps":
+    Correlation value: 0.045
+    Interpretation: This indicates a very weak positive correlation between the number     of sleepless nights in a week and the number of daily steps taken.
+    
+
+
+
+
+**Pair plot of Quality Of Sleep, Sleepless Nights In A Week, Stress Level , Headache Frequency and Hours Of EC Devices Before Sleep**
+
+
+```{r}
+
+pairs_plot <- ggpairs(encoded_data1[, c("QualityOfSleep", "SleeplessNightsInAWeek", "StressLevel", "HeadacheFrequency",
+                                        "HoursOfECDevicesBeforeSleep")],
+                    lower = list(continuous = "smooth"),
+                    diag = list(continuous = "density"),
+                    upper = list(continuous = "cor"),
+                    title = "Pairs Plot of Stress and health-related variables",
+                    mapping = aes(color = "navy"),
+                    labels = c("Quality of Sleep", "Sleepless Nights In A Week", "Stress Level", "Headache Frequency",
+                               "HoursOfECDevicesBeforeSleep"))
+
+print(pairs_plot)
+```
+
+1. "QualityOfSleep" and "SleeplessNightsInAWeek":
+    Correlation value: -0.455
+    Interpretation: This indicates a relatively strong negative correlation between the     quality of sleep and the number of sleepless nights in a week.
+    
+2. "QualityOfSleep" and "StressLevel":
+    Correlation value: -0.261
+    Interpretation: This indicates a moderate negative correlation between the quality     of sleep and the level of stress.
+
+3. "QualityOfSleep" and "HeadacheFrequency":
+    Correlation value: -0.224
+    Interpretation: This indicates a moderate negative correlation between the quality     of sleep and the frequency of headaches.
+    
+4. "SleeplessNightsInAWeek" and "StressLevel":
+    Correlation value: 0.166
+    Interpretation: This indicates a weak positive correlation between the number of       sleepless nights in a week and the level of stress.
+    
+
+
+
+**Correlation Matrix between Quality Of Sleep, Sleepless Nights In A Week, Gender and Age**
+
+
+```{r}
+library(ggplot2)
+library(GGally)
+library(ggcorrplot)
+
+cor_matrix <- cor(encoded_data1[, c("QualityOfSleep", "SleeplessNightsInAWeek", "GenderMale","GenderFemale" , "Age")])
+
+heatmap_plot <- ggcorrplot(cor_matrix, type = "lower", outline.color = "white", lab = TRUE)
+
+heatmap_plot +
+  labs(title = "Heatmap for Demographic Variables",           
+       x = "", y = "") + 
+  theme_minimal() +  # Apply a minimal theme
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),  
+    axis.text.y = element_text(angle = 0, hjust = 1),   
+    legend.position = "right",                          
+    plot.title = element_text(hjust = 0.5)               
+  ) +
+  scale_fill_gradient(low = "yellow", high = "pink")        
+```
+
+1. "QualityOfSleep" and "SleeplessNightsInAWeek":
+    Correlation value: -0.455
+    Interpretation: This indicates a relatively strong negative correlation between the     quality of sleep and the number of sleepless nights in a week.
+    
+2. "QualityOfSleep" and "GenderMale" / "GenderFemale":
+    Correlation values: -0.064 and 0.064, respectively
+    Interpretation: These values indicate weak correlations between the quality of         sleep and gender. 
+    
+3. "QualityOfSleep" and "Age":
+    Correlation value: -0.065
+    Interpretation: This indicates a very weak negative correlation between the quality     of sleep and age. 
+
+
+**Correlation Matrix between Quality Of Sleep, Sleepless Nights In A Week, Year and Branch**
+
+
+
+```{r}
+cor_matrix <- cor(encoded_data1[, c("QualityOfSleep", "SleeplessNightsInAWeek", "YearFirstYear","YearSecondYear" 
+                                    , "YearThirdYear", "BranchChemIC", "BranchComp", "BranchET","BranchMech")])
+
+heatmap_plot <- ggcorrplot(cor_matrix, type = "lower", outline.color = "white", lab = TRUE)
+
+heatmap_plot +
+  labs(title = "Heatmap for Engineering related variables",           
+       x = "", y = "") + 
+  theme_minimal() +  # Apply a minimal theme
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),  
+    axis.text.y = element_text(angle = 0, hjust = 1),   
+    legend.position = "right",                        
+    plot.title = element_text(hjust = 0.5)               
+  ) +
+  scale_fill_gradient(low = "yellow", high = "pink")        
+```
+
+1. "QualityOfSleep" and "SleeplessNightsInAWeek":
+    Correlation value: -0.455
+    Interpretation: This indicates a relatively strong negative correlation between the     quality of sleep and the number of sleepless nights in a week. 
+    
+2. "QualityOfSleep" and "YearFirstYear", "YearSecondYear", "YearThirdYear":
+    Correlation values: -0.015, -0.007, 0.015, respectively
+    Interpretation: These correlation values indicate very weak correlations between       the quality of sleep and the academic year.
+    
+3. "QualityOfSleep" and "BranchChemIC", "BranchComp", "BranchET", "BranchMech":
+    Correlation values: -0.008, -0.019, -0.106, 0.061, respectively
+    Interpretation: These correlation values indicate very weak correlations between       the quality of sleep and the branches of study.
+    
+
+
+**Performing Principal Component Analysis(PCA) on the encoded data**
+
+```{r}
+
+pca_result <- prcomp(encoded_data1, scale. = TRUE)
+
+summary(pca_result)
+
+```
+
+Interpreting these results, we can see that:
+
+- The first few principal components (PC1 to PC5) explain a significant portion of the   variance in the data, with PC1 being the most important.
+- As we move down the list of principal components, each subsequent component explains   a smaller proportion of the total variance.
+- The cumulative proportion of variance increases as we include more principal           components, eventually reaching 100% with all components included.
+- The last few principal components (PC19 to PC22) explain a very small proportion of    the total variance and may not be as informative.
+
+**Generating the scree plot for visualising the variance and cumulative variance**
+
+
+```{r}
+
+plot(1:length(pca_result$sdev), pca_result$sdev^2, 
+     type = "b", 
+     xlab = "Principal Component",
+     ylab = "Variance Explained",
+     main = "Scree Plot for PCA")
+
+
+cumulative_variance <- cumsum(pca_result$sdev^2) / sum(pca_result$sdev^2)
+lines(1:length(pca_result$sdev), cumulative_variance, type = "b", col = "red")
+
+legend("topright", legend = c("Variance Explained", "Cumulative Variance Explained"), 
+       col = c("black", "red"), pch = 1)
+
+```
+
+The point of intersection indicates the number of principal components where adding additional components does not contribute significantly to explaining more variance in the data. This point is often used as a guideline for selecting the number of principal components to retain in the analysis.
+
+
+**Getting the components which contribute to 80 percent of the cumulative variance**
+
+
+
+
+```{r}
+
+variance_explained <- pca_result$sdev^2 / sum(pca_result$sdev^2)
+
+cumulative_variance_explained <- cumsum(variance_explained)
+
+desired_variance_explained <- 0.8
+num_components <- which.max(cumulative_variance_explained >= desired_variance_explained) + 1
+
+plot(1:length(pca_result$sdev), cumulative_variance_explained, 
+     type = "b", 
+     xlab = "Principal Component",
+     ylab = "Cumulative Variance Explained",
+     main = "Scree Plot with Cumulative Variance Explained")
+
+abline(h = desired_variance_explained, col = "red")
+
+abline(v = num_components, col = "blue")
+
+legend("topright", legend = c("Cumulative Variance Explained", paste("Desired Variance Explained:", desired_variance_explained)), 
+       col = c("black", "red"), pch = 1)
+
+
+cat("Number of principal components selected:", num_components)
+
+```
+
+
+When performing dimensionality reduction with PCA, it's often desirable to strike a balance between reducing the dimensionality of the data while still retaining a significant amount of information. By setting a desired variance explained of 0.8, we aim to retain a sufficient amount of variability in the data while reducing its dimensionality.
+
+
+**Again performing principal component analysis on the 14 components selected**
+
+```{r}
+
+selected_num_components <- num_components  
+selected_pca_result <- prcomp(encoded_data1, scale. = TRUE, rank. = selected_num_components)
+
+summary(selected_pca_result)
+```
+
+- The first principal component (PC1) has the largest standard deviation and explains     the highest proportion of variance (11.12%). It captures the most significant         patterns of variability present in the data.
+
+- Subsequent principal components contribute progressively less to the total variance,   as indicated by their decreasing proportions of variance.
+
+- The cumulative proportion of variance explained increases with each additional         principal component, indicating that including more components provides a more         comprehensive account of the data's variability.
+
+- In this case, the first 14 principal components (out of 22) collectively explain       approximately 84.916% of the total variance in the dataset. This suggests that these   14 components capture the most essential patterns and structures within the data.
+
+**Extract the loadings from the PCA results and plot a graph based on that**
+
+
+```{r}
+
+loadings <- selected_pca_result$rotation
+
+print("Loadings Matrix:")
+print(loadings)
+
+library(ggplot2)
+
+loadings_df <- as.data.frame(loadings)
+loadings_df$variable <- rownames(loadings_df)
+
+library(reshape2)
+loadings_melted <- melt(loadings_df, id.vars = "variable", variable.name = "Principal_Component", value.name = "Loading")
+
+ggplot(loadings_melted, aes(x = variable, y = Loading, fill = Principal_Component)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Loadings of Variables on Principal Components",
+       x = "Variable",
+       y = "Loading") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+
+
+The loadings matrix represents the correlations between the original variables and the principal components (PCs) obtained from a principal component analysis (PCA). Each column in the loadings matrix corresponds to a principal component, and each row corresponds to an original variable. The values in the matrix indicate the strength and direction of the relationship between each variable and each principal component.
+
+
+**Print the loadings matrix and also the loading values for the principal components**
+
+
+```{r}
+
+loadings <- selected_pca_result$rotation
+
+print("Loadings Matrix:")
+print(loadings)
+
+
+for (i in 1:ncol(loadings)) {
+  cat("Principal Component", i, ":\n")
+  
+  sorted_loadings <- sort(abs(loadings[, i]), decreasing = TRUE)
+  
+  for (j in 1:length(sorted_loadings)) {
+    var_name <- rownames(loadings)[which(abs(loadings[, i]) == sorted_loadings[j])]
+    cat(var_name, ": ", loadings[var_name, i], "\n")
+  }
+  cat("\n")
+}
+```
+
+Let's take PC1 as an example:
+
+- Variables with high positive loadings on PC1 include GenderMale, Age, QualityOfSleep,   and PhysicalActivityLevel. This suggests that individuals with higher age, better      sleep quality, and higher physical activity levels tend to have higher values on PC1.
+- Conversely, variables with high negative loadings on PC1 include GenderFemale and      HeadacheFrequency. This suggests that individuals who are female or experience more    headaches tend to have lower values on PC1.
+
+
+**Plot a biplot to showcase the results of the principal component analysis**
+
+
+```{r}
+
+scores <- as.data.frame(selected_pca_result$x)
+
+biplot(selected_pca_result, scale = 0, col = c("blue", "red"), cex = 0.5, main = "Biplot of PCA Results")
+
+text(selected_pca_result$rotation, labels = colnames(encoded_data1), col = "blue", cex = 0.5, pos = 4)
+
+text(scores[, 1], scores[, 2], labels = rownames(scores), col = "red", cex = 0.5, pos = 4)
+
+abline(h = 0, v = 0, col = "gray", lty = 2)
+
+legend("topright", legend = c("Variables", "Observations"), col = c("blue", "red"), pch = 1, cex = 0.5)
+
+
+
+```
+
+
+Overall, the biplot provides a visual representation of the relationships between observations and variables in the reduced-dimensional space defined by the principal components. It helps to visualize patterns, clusters, and correlations in the data.
+
+
+
+**Performing hypothesis testing on all the columns to identify which variables are affecting sleep quality and which do not seem to affect the quality of sleep**
+
+
+
+
+
+
+1. Hypothesis:
+    Individuals who engage in higher levels of physical activity have better sleep quality.
+
+```{r}
+
+library(dplyr)
+library(ggplot2)
+
+data_subset <- encoded_data1[, c("PhysicalActivityLevel", "QualityOfSleep")]
+
+model <- lm(QualityOfSleep ~ PhysicalActivityLevel, data = data_subset)
+
+summary(model)
+
+
+
+```
+
+**Correlation between physical activity level and Quality Of Sleep**
+
+
+```{r}
+
+ggplot(data_subset, aes(x = PhysicalActivityLevel, y = QualityOfSleep)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Physical Activity Level", y = "Quality of Sleep") +
+  ggtitle("Relationship between Physical Activity Level and Quality of Sleep")
+```
+
+
+
+
+Null Hypothesis (H0):
+There is no significant relationship between physical activity level and sleep quality.
+
+In this case, the p-value for "PhysicalActivityLevel" is very small (1.98e-06), indicating that it is highly unlikely to observe the estimated coefficient value if the true coefficient were zero (i.e., if there were no relationship between physical activity level and sleep quality). Therefore, we reject the null hypothesis.
+
+In simpler terms, the statistical evidence suggests that there is a significant relationship between physical activity level and sleep quality.
+
+
+
+
+2. Hypothesis:
+    Skipping breakfast is associated with sleepless nights.
+
+
+```{r}
+data_subset <- encoded_data1[, c("BreakfastSkip", "QualityOfSleep")]
+
+model <- lm(QualityOfSleep ~ BreakfastSkip, data = data_subset)
+
+summary(model)
+```
+
+**Correlation between Breakfast Skip and Quality Of Sleep**
+
+
+```{r}
+
+ggplot(data_subset, aes(x = BreakfastSkip, y = QualityOfSleep)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Breakfast Skip", y = "Quality of Sleep") +
+  ggtitle("Relationship between Breakfast Skip and Quality of Sleep")
+```
+
+
+
+
+Null Hypothesis (H0):
+There is no significant difference in the frequency of sleepless nights between individuals who skip breakfast and those who don't.
+
+In this case, the p-value for "BreakfastSkip" is very small (0.0004346), indicating that it is highly unlikely to observe the estimated coefficient value if the true coefficient were zero (i.e., if there were no relationship between skipping breakfast and sleep quality). Therefore, we reject the null hypothesis.
+
+In simpler terms, the statistical evidence suggests that there is a significant relationship between skipping breakfast and sleep quality.
+
+
+
+3. Hypothesis:
+    Age is associated with sleep quality.
+
+```{r}
+data_subset <- encoded_data1[, c("Age", "QualityOfSleep")]
+
+model <- lm(QualityOfSleep ~ Age, data = data_subset)
+
+summary(model)
+```
+
+**Correlation between Age and Quality Of Sleep**
+
+```{r}
+
+ggplot(data_subset, aes(x = Age, y = QualityOfSleep)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Age", y = "Quality of Sleep") +
+  ggtitle("Relationship between Age and Quality of Sleep")
+```
+
+
+
+
+Null Hypothesis (H0):
+There is no significant relationship between age and sleep quality.
+
+
+In this case, the p-value for "Age" is quite large (0.1539), indicating that it is highly likely to observe the estimated coefficient value if the true coefficient were zero (i.e., if there were no relationship between age and sleep quality). Therefore, we accept the null hypothesis.
+
+In simpler terms, the statistical evidence suggests that there is no significant relationship between age and sleep quality.
+
+
+4. Hypothesis:
+    There is a difference in sleep quality between different genders.
+
+```{r}
+library(dplyr)
+
+data_subset <- encoded_data1[, c("QualityOfSleep", "GenderMale", "GenderFemale")]
+
+t_test_result <- t.test(QualityOfSleep ~ GenderMale, data = data_subset)
+
+print(t_test_result)
+```
+
+
+
+Null Hypothesis (H0):
+There is no significant difference in sleep quality between different genders.
+In this case, the p-value for "Age" is quite large (0.1631), indicating that it is highly likely to observe the estimated coefficient value if the true coefficient were zero (i.e., if there were no relationship between gender and sleep quality). Therefore, we accept the null hypothesis.
+
+In simpler terms, the statistical evidence suggests that there is no significant relationship between gender and sleep quality.
+
+
+5. Hypothesis:
+    There is a difference in sleep quality between different branches of individuals.
+
+
+```{r}
+data_subset <- encoded_data1[, c("QualityOfSleep", "BranchChemIC", "BranchIT", "BranchET", "BranchComp", "BranchMech")]
+
+anova_result <- aov(QualityOfSleep ~ BranchChemIC + BranchIT + BranchET + BranchComp + BranchMech, data = data_subset)
+
+print(summary(anova_result))
+```
+
+
+
+Null Hypothesis (H0):
+There is no significant difference in sleep quality between different branches.
+
+-BranchENTC has a p-value of 0.0154, which is less than 0.05. Therefore, you would reject the null hypothesis for this branch   and conclude that there is evidence of a significant difference in the mean response variable among the branches.In simpler  terms, the statistical evidence suggests that there is a significant relationship between being in BranchENTC and sleep       quality.    
+
+-For the other branches (ChemIC, IT, Comp, Mech), their respective p-values are all greater than 0.05. Therefore, you would 
+ fail to reject the null hypothesis for these branches, indicating that there is insufficient evidence to conclude that there  is a significant difference in the mean response variable among these branches.In simpler  terms, the statistical evidence    suggests that there is no significant relationship between being in a branch other than BranchENTC and sleep quality.
+ 
+
+
+
+6. Hypothesis:
+    There is a difference in sleep quality between individuals of different years of engineering.
+
+```{r}
+data_subset <- encoded_data1[, c("QualityOfSleep", "YearFirstYear", "YearSecondYear", "YearThirdYear")]
+
+anova_result <- aov(QualityOfSleep ~ YearFirstYear + YearSecondYear + YearThirdYear, data = data_subset)
+
+print(summary(anova_result))
+```
+
+
+
+
+Null Hypothesis (H0):
+There is no significant difference in sleep quality between different years of engineering.
+
+For all year categories (FirstYear, SecondYear, ThirdYear), their respective p-values are all greater than 0.05. Therefore, you would fail to reject the null hypothesis for all year categories, indicating that there is insufficient evidence to conclude that there is a significant difference in the mean response variable among the different year categories.
+
+In simpler words, being in specific year of engineering does not have a significant impact on sleep quality.
+
+
+7. Hypothesis:
+    Individuals who nap more frequently have better quality of sleep.
+
+```{r}
+data_subset <- encoded_data1[, c("NapsInAweek", "QualityOfSleep")]
+
+model <- lm(QualityOfSleep ~ NapsInAweek, data = data_subset)
+
+summary(model)
+```
+
+**Correlation between Physical Activity Level and Quality Of Sleep**
+
+```{r}
+
+ggplot(data_subset, aes(x = NapsInAweek, y = QualityOfSleep)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "NapsInAweek", y = "Quality of Sleep") +
+  ggtitle("Relationship between NapsInAweek and Quality of Sleep")
+```
+
+
+
+Null Hypothesis (H0):
+There is no significant relationship between frequency of naps and sleep quality.
+
+In this case, the p-value for "NapsInAWeek" is quite large (0.225), indicating that it is highly likely to observe the estimated coefficient value if the true coefficient were zero (i.e., if there were no relationship between frequency of naps and sleep quality). Therefore, we accept the null hypothesis.
+
+In simpler terms, the statistical evidence suggests that there is no significant relationship between frequency of naps and sleep quality.
+
+
+8. Hypothesis
+    The time individuals spend on electronic devices before sleep affects their sleep quality.
+
+
+```{r}
+data_subset <- encoded_data1[, c("HoursOfECDevicesBeforeSleep", "QualityOfSleep")]
+
+model <- lm(QualityOfSleep ~ HoursOfECDevicesBeforeSleep, data = data_subset)
+
+
+summary(model)
+```
+
+**Correlation between Hours of EC devices before Sleep**
+
+```{r}
+ggplot(data_subset, aes(x = HoursOfECDevicesBeforeSleep, y = QualityOfSleep)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "HoursOfECDevicesBeforeSleep", y = "Quality of Sleep") +
+  ggtitle("Relationship between HoursOfECDevicesBeforeSleep and Quality of Sleep")
+```
+
+
+
+
+Null Hypothesis (H0):
+There is no significant relationship between hours spent on electronic devices before sleep and sleep quality.
+
+In this case, the p-value for "HoursOfECDevicesBeforeSleep" is quite large (0.0793), indicating that it is highly likely to observe the estimated coefficient value if the true coefficient were zero (i.e., if there were no relationship between hours spent on electronic devices before sleep and sleep quality). Therefore, we accept the null hypothesis.
+
+In simpler terms, the statistical evidence suggests that there is no significant relationship between hours spent on electronic devices before sleep and sleep quality.
+
+
+9. Hypothesis:
+    There is a relationship between the number of daily steps and sleep quality.
+
+```{r}
+data_subset <- encoded_data1[, c("DailySteps", "QualityOfSleep")]
+
+model <- lm(QualityOfSleep ~ DailySteps, data = data_subset)
+
+summary(model)
+```
+
+**Correlation between Daily Steps and Quality Of Sleep**
+
+```{r}
+ggplot(data_subset, aes(x = DailySteps, y = QualityOfSleep)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "DailySteps", y = "Quality of Sleep") +
+  ggtitle("Relationship between DailySteps and Quality of Sleep")
+```
+
+
+
+
+Null Hypothesis (H0):
+There is no significant relationship between the number of daily steps and sleep quality.
+
+In this case, the p-value for "DailySteps" is quite large (0.4999), indicating that it is highly likely to observe the estimated coefficient value if the true coefficient were zero (i.e., if there were no relationship between number of daily steps and sleep quality). Therefore, we accept the null hypothesis.
+
+In simpler terms, the statistical evidence suggests that there is no significant relationship between number of daily steps and sleep quality.
+
+
+10. Hypothesis:
+    There is a difference in sleep quality between individuals experiencing different levels of stress.
+
+```{r}
+data_subset <- encoded_data1[, c("StressLevel", "QualityOfSleep")]
+
+model <- lm(QualityOfSleep ~ StressLevel, data = data_subset)
+
+summary(model)
+```
+
+**Correlation of Stress Level and Quality Of Sleep**
+
+
+```{r}
+ggplot(data_subset, aes(x = StressLevel, y = QualityOfSleep)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "StressLevel", y = "Quality of Sleep") +
+  ggtitle("Relationship between StressLevel and Quality of Sleep")
+```
+
+
+
+
+Null Hypothesis (H0):
+There is no significant difference in sleep quality between individuals experiencing different levels of stress.
+
+In this case, the p-value for "StressLevel" is very small (5.506e-09), indicating that it is highly unlikely to observe the estimated coefficient value if the true coefficient were zero (i.e., if there were no relationship between stress levels and sleep quality). Therefore, we reject the null hypothesis.
+
+In simpler terms, the statistical evidence suggests that there is a significant relationship between stress levels and sleep quality.
+
+
+11. Hypothesis:
+    There is a relationship between headache frequency and sleep quality.
+
+```{r}
+data_subset <- encoded_data1[, c("HeadacheFrequency", "QualityOfSleep")]
+
+model <- lm(QualityOfSleep ~ HeadacheFrequency, data = data_subset)
+
+summary(model)
+```
+
+**Correlation between Headache Frequency and Quality Of Sleep**
+
+
+```{r}
+ggplot(data_subset, aes(x = HeadacheFrequency, y = QualityOfSleep)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "HeadacheFrequency", y = "Quality of Sleep") +
+  ggtitle("Relationship between HeadacheFrequency and Quality of Sleep")
+```
+
+
+
+Null Hypothesis (H0):
+There is no significant relationship between headache frequency and sleep quality.
+
+In this case, the p-value for "HeadacheFrequency" is very small (6.785e-07), indicating that it is highly unlikely to observe the estimated coefficient value if the true coefficient were zero (i.e., if there were no relationship between headache frequency and sleep quality). Therefore, we reject the null hypothesis.
+
+In simpler terms, the statistical evidence suggests that there is a significant relationship between headache frequency and sleep quality.
+
+
+12. Hypothesis:
+    There is a relationship between the timing of dinner and sleep quality.
+
+```{r}
+data_subset <- encoded_data1[, c("DinnerTime", "QualityOfSleep")]
+
+model <- lm(QualityOfSleep ~ DinnerTime, data = data_subset)
+
+summary(model)
+```
+
+**Correlation between Dinner Time and Quality Of Sleep**
+
+```{r}
+ggplot(data_subset, aes(x = DinnerTime, y = QualityOfSleep)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "DinnerTime", y = "Quality of Sleep") +
+  ggtitle("Relationship between Dinner Time and Quality of Sleep")
+```
+
+
+
+Null Hypothesis (H0):
+There is no significant relationship between dinner time and sleep quality.
+
+In this case, the p-value for "DinnerTime" is very small (1.729e-05), indicating that it is highly unlikely to observe the estimated coefficient value if the true coefficient were zero (i.e., if there were no relationship between dinner time and sleep quality). Therefore, we reject the null hypothesis.
+
+In simpler terms, the statistical evidence suggests that there is a significant relationship between dinner time and sleep quality.
+
+
+**Normalizing the columns Hours Of Sleep, Quality Of Sleep, Stress Level and Sleepless Nights In A Week**
+
+```{r}
+
+library(dplyr)
+
+data_subset <- encoded_data1[, c("HoursOfSleep", "QualityOfSleep", "StressLevel","SleeplessNightsInAWeek")]
+
+normalized_data <- scale(data_subset)
+
+head(normalized_data)
+```
+
+**Performing K-Means Clustering on this normalized data**
+
+
+```{r}
+
+if (!is.data.frame(normalized_data)) {
+  normalized_data <- as.data.frame(normalized_data)
+}
+
+normalized_data <- na.omit(normalized_data)
+
+str(normalized_data)
+
+kmeans_model <- kmeans(normalized_data, centers = 3, nstart = 10)
+
+normalized_data$cluster <- as.factor(kmeans_model$cluster)
+
+ggplot(normalized_data, aes(x = HoursOfSleep, y = QualityOfSleep, color = cluster)) +
+  geom_point() +
+  labs(title = "K-means Clustering of Sleep Patterns",
+       x = "Hours of Sleep",
+       y = "Quality of Sleep",
+       color = "Cluster") +
+  theme_minimal()
+
+
+
+```
+
+
+**Plotting the 3d scatterplot for the clusters**
+
+```{r}
+
+library(scatterplot3d)
+normalized_data$cluster <- as.factor(kmeans_model$cluster)
+
+scatterplot3d(normalized_data$HoursOfSleep, normalized_data$QualityOfSleep, normalized_data$StressLevel, 
+              color = as.numeric(normalized_data$cluster), 
+              pch = 19, 
+              main = "K-means Clustering of Sleep Patterns",
+              xlab = "Hours of Sleep",
+              ylab = "Quality of Sleep",
+              zlab = "Stress Level",
+              angle = 55)
+
+
+
+```
+
+**Plotting the Pair Plots for these normalized columns**
+
+
+```{r}
+
+normalized_data$cluster <- as.factor(kmeans_model$cluster)
+
+normalized_subset <- normalized_data[, c("HoursOfSleep", "QualityOfSleep", "StressLevel", "SleeplessNightsInAWeek", "cluster")]
+
+pairs(normalized_subset[, -5], col = normalized_subset$cluster, pch = 19)
+```
+
+**Normalizing the columns Breakfast Skip, Quality Of Sleep, Dinner Time, Headache Frequency and Sleepless Nights In A Week**
+
+
+```{r}
+
+library(dplyr)
+
+data_subset <- encoded_data1[, c("BreakfastSkip", "QualityOfSleep", "DinnerTime","SleeplessNightsInAWeek","HeadacheFrequency")]
+
+normalized_data <- scale(data_subset)
+
+head(normalized_data)
+
+```
+
+
+**Performing K-Means Clustering on this normalized data**
+
+```{r}
+
+if (!is.data.frame(normalized_data)) {
+  normalized_data <- as.data.frame(normalized_data)
+}
+normalized_data <- na.omit(normalized_data)
+
+str(normalized_data)
+
+kmeans_model <- kmeans(normalized_data, centers = 3, nstart = 10)
+
+normalized_data$cluster <- as.factor(kmeans_model$cluster)
+
+ggplot(normalized_data, aes(x = BreakfastSkip, y = DinnerTime, color = cluster)) +
+  geom_point() +
+  labs(title = "K-means Clustering of Sleep Patterns",
+       x = "Breakfast Skip",
+       y = "Dinner Time",
+       color = "Cluster") +
+  theme_minimal()
+```
+
+**Plotting the 3d scatterplot for the clusters**
+
+
+```{r}
+normalized_data$cluster <- as.factor(kmeans_model$cluster)
+
+scatterplot3d(normalized_data$BreakfastSkip, normalized_data$QualityOfSleep, normalized_data$DinnerTime, 
+              color = as.numeric(normalized_data$cluster), 
+              pch = 19, 
+              main = "K-means Clustering of Sleep Patterns",
+              xlab = "BreakfastSkip",
+              ylab = "Quality of Sleep",
+              zlab = "DinnerTime",
+              angle = 55)
+```
+
+**Plotting the Pair Plots for these normalized columns**
+
+
+```{r}
+normalized_data$cluster <- as.factor(kmeans_model$cluster)
+
+normalized_subset <- normalized_data[, c("BreakfastSkip", "QualityOfSleep", "DinnerTime", "SleeplessNightsInAWeek", "cluster", "HeadacheFrequency")]
+
+pairs(normalized_subset[, -5], col = normalized_subset$cluster, pch = 19)
+
+```
+
+**Normalizing the columns Breakfast Skip, Quality Of Sleep, Dinner Time, Headache Frequency , Physical Activity Level, and Stress Level **
+
+
+```{r}
+data_subset <- encoded_data1[, c("BreakfastSkip", "QualityOfSleep", "PhysicalActivityLevel","StressLevel","HeadacheFrequency", "DinnerTime")]
+
+normalized_data <- scale(data_subset)
+
+head(normalized_data)
+```
+**Applying a decision tree model on the normalized columns**
+
+```{r}
+library(caTools)
+normalized_data_df <- as.data.frame(normalized_data)
+
+set.seed(123)
+
+split <- sample.split(normalized_data_df$QualityOfSleep, SplitRatio = 0.8)
+
+train_data <- subset(normalized_data_df, split == TRUE)
+
+test_data <- subset(normalized_data_df, split == FALSE)
+
+```
+
+
+```{r}
+
+library(rpart)
+normalized_data_df <- as.data.frame(normalized_data)
+
+model_tree <- rpart(QualityOfSleep ~ PhysicalActivityLevel + BreakfastSkip + StressLevel + HeadacheFrequency + DinnerTime, data = train_data)
+
+
+
+```
+
+
+**Plotting the decision tree model created above**
+
+
+```{r}
+
+library(rpart.plot)
+
+prp(model_tree,
+    box.col = c("#FF9999", "#99CCFF"),  
+    branch.lty = 3,                      
+    branch.lwd = 2,                      
+    split.cex = 1.2,                     
+    extra = 101,                         
+    shadow.col = "gray",                 
+    varlen = 1,                        
+    faclen = 1,                        
+    tweak = 1.5,                         
+                   
+    branch = 0.6,                       
+    type = 4,                            
+    digits = 3,                          
+                     
+    fallen.leaves = TRUE,                
+    #widths = c(0.6, 0.9),                
+    #just = c("left", "left")
+)
+```
+
+**Applying a Random Forest model on the normalized columns**
+
+
+
+```{r}
+library(randomForest)
+
+model_rf <- randomForest(QualityOfSleep ~ PhysicalActivityLevel + BreakfastSkip + StressLevel + HeadacheFrequency + DinnerTime, data = train_data)
+
+print(model_rf)
+```
+
+**Getting the accuracy metrics of the Random Forest Model**
+
+
+```{r}
+predictions <- predict(model_rf, test_data)
+
+actual_values <- encoded_data1$QualityOfSleep
+
+MAE <- mean(abs(actual_values - predictions))
+
+MSE <- mean((actual_values - predictions)^2)
+
+RMSE <- sqrt(MSE)
+actual_mean <- mean(actual_values)
+total_sum_of_squares <- sum((actual_values - actual_mean)^2)
+residual_sum_of_squares <- sum((actual_values - predictions)^2)
+R_squared <- 1 - (residual_sum_of_squares / total_sum_of_squares)
+
+cat("\nMean Absolute Error (MAE):", MAE, "\n")
+cat("Mean Squared Error (MSE):", MSE, "\n")
+cat("Root Mean Squared Error (RMSE):", RMSE, "\n")
+cat("R-squared:", R_squared, "\n")
+
+
+```
+Since, the model has a negative R-squared value it can be concluded that the model does not perform well in accurately predicting the quality of sleep based on the given features. This result was expected since the data was collected manually and there are expected outliers in the dataset. 
+
+
+
+
+
+**Performing hypothesis testing on all the columns to identify which variables are affecting sleep quality and which do not seem to affect the quality of sleep**
+
+
+1. Hypothesis - There is a relationship between skipping breakfast and headache frequency among individuals.
+```{r}
+data_subset <- encoded_data1[, c("BreakfastSkip", "HeadacheFrequency")]
+
+model <- lm(HeadacheFrequency ~ BreakfastSkip, data = data_subset)
+summary(model)
+```
+
+**Correlation between Headache Frequency and Breakfast Skip**
+
+
+```{r}
+ggplot(data_subset, aes(x = HeadacheFrequency, y = BreakfastSkip)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Headache Frequency", y = "Breakfast Skip") +
+  ggtitle("Relationship between Headache Frequency and Breakfast Skip")
+```
+
+Null Hypothesis (H0):
+There is no association between skipping breakfast and headache frequency among individuals.
+
+In this case, the p-value for "Skipping Breakfast" is quite large (0.6559), indicating that it is highly likely to observe the estimated coefficient value if the true coefficient were zero (i.e., if there were no relationship between skipping breakfast and headache frequency). Therefore, we accept the null hypothesis.
+
+In simpler terms, the statistical evidence suggests that there is no significant relationship between Skipping Breakfast and Headache Frequency.
+
+
+2. Hypothesis - There is a relationship between the time of dinner and headache frequency among individuals.
+```{r}
+data_subset <- encoded_data1[, c("DinnerTime", "HeadacheFrequency")]
+
+model <- lm(HeadacheFrequency ~ DinnerTime, data = data_subset)
+
+summary(model)
+```
+
+**Correlation between Headache Frequency and Dinner Time**
+
+```{r}
+ggplot(data_subset, aes(x = HeadacheFrequency, y = DinnerTime)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Headache Frequency", y = "Dinner Time") +
+  ggtitle("Relationship between Headache Frequency and Dinner Time")
+```
+
+
+
+Null Hypothesis (H0):
+There is no association between the time of dinner and headache frequency among individuals.
+
+In this case, the p-value for "DinnerTime" is quite large (0.878), indicating that it is highly likely to observe the estimated coefficient value if the true coefficient were zero (i.e., if there were no relationship between Dinner Time and headache frequency). Therefore, we accept the null hypothesis.
+
+In simpler terms, the statistical evidence suggests that there is no significant relationship between Dinner Time  and Headache Frequency.
+
+
+
