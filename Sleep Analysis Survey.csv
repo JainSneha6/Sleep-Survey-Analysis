@@ -1,0 +1,484 @@
+Timestamp,What is your gender?,What is your age?,In which year are you currently studying?,Which branch do you belong to?,How many hours of sleep do you get on average?,Rate your quality of sleep.,How often do you take naps in a week (in days)?,Rate your physical activity level.,Rate your stress level.,What is your average number of daily steps?,How many hours do you use electronic devices before sleep?,How often do you suffer from headaches?,How often do you skip breakfast?,At what time do you eat your dinner?,"On an average, how many nights in a week do you go through without sleep?",Your feedback about our survey. 
+02-07-2024 10:30,Male,18,SecondYear,Comp,0 to 5,4,0,9,10,6k-8k,1 hour,Rarely,Always,20:00-21:00,3,
+02-07-2024 11:04,Male,19,SecondYear,Comp,7 to 9,8,0,5,10,6k-8k,2 hours,Rarely,Never,21:00-22:00,1,
+02-07-2024 11:06,Female,19,SecondYear,Comp,7 to 9,6,1 to 3,5,7,6k-8k,2 hours,Never,Always,19:00-20:00,1,Nice survey
+02-07-2024 11:13,Female,19,SecondYear,Comp,7 to 9,7,1 to 3,5,10,4k-6k,5 hours,Rarely,Never,21:00-22:00,0,I made it and I am very happy
+02-07-2024 11:15,Male,20,SecondYear,Comp,5 to 7,10,0,10,1,0-2k,1 hour,Never,Rarely,19:00-20:00,0,
+02-07-2024 11:38,Female,20,SecondYear,IT,7 to 9,8,6 to 7,7,10,4k-6k,3 hours,Sometimes,Never,20:00-21:00,0,
+02-07-2024 11:44,Male,19,SecondYear,Comp,7 to 9,6,0,5,3,6k-8k,4 hours,Rarely,Always,20:00-21:00,0,
+02-07-2024 11:52,Female,19,SecondYear,IT,5 to 7,5,0,4,5,0-2k,4 hours,Sometimes,Rarely,22:00-23:00,4,
+02-07-2024 12:07,Male,19,SecondYear,Comp,5 to 7,6,1 to 3,9,9,6k-8k,3 hours,Rarely,Rarely,20:00-21:00,0,Nice
+02-07-2024 12:13,Male,19,SecondYear,Comp,0 to 5,5,1 to 3,9,1,8k-10k,5 hours,Rarely,Sometimes,20:00-21:00,2,Interesting
+02-07-2024 13:28,Male,20,SecondYear,Mech,5 to 7,6,1 to 3,7,7,8k-10k,5 hours,Sometimes,Often,21:00-22:00,2,
+02-07-2024 13:29,Male,20,SecondYear,Comp,9,5,4 to 5,6,10,0-2k,5 hours,Always,Often,21:00-22:00,7,
+02-07-2024 13:50,Male,19,SecondYear,AIML,5 to 7,5,0,10,5,Grt than 10k,4 hours,Never,Always,20:00-21:00,0,Should have also asked sleep time ??
+02-07-2024 13:54,Male,20,SecondYear,AIML,5 to 7,8,4 to 5,5,5,8k-10k,3 hours,Rarely,Always,20:00-21:00,1,
+02-07-2024 14:22,Female,20,SecondYear,ET,7 to 9,7,1 to 3,8,6,4k-6k,5 hours,Sometimes,Sometimes,20:00-21:00,0,
+02-07-2024 14:29,Male,19,SecondYear,AIML,5 to 7,8,1 to 3,7,7,6k-8k,2 hours,Rarely,Never,21:00-22:00,0,Nada
+02-07-2024 14:38,Male,20,SecondYear,Comp,5 to 7,7,1 to 3,5,5,2k-4k,1 hour,Often,Sometimes,21:00-22:00,1,
+02-07-2024 15:53,Female,19,SecondYear,AIML,5 to 7,8,1 to 3,6,9,4k-6k,2 hours,Sometimes,Often,21:00-22:00,0,
+02-07-2024 16:09,Male,19,SecondYear,Mech,7 to 9,8,1 to 3,4,3,6k-8k,5 hours,Rarely,Never,20:00-21:00,0,
+02-07-2024 16:14,Male,18,FirstYear,IT,5 to 7,7,4 to 5,7,5,4k-6k,2 hours,Rarely,Sometimes,20:00-21:00,1,Good and helpfull
+02-07-2024 16:15,Female,18,FirstYear,AIML,5 to 7,6,0,7,6,4k-6k,2 hours,Always,Always,22:00-23:00,0,
+02-07-2024 16:16,Male,20,FirstYear,AIML,5 to 7,7,4 to 5,8,5,6k-8k,3 hours,Rarely,Often,20:00-21:00,1,
+02-07-2024 16:17,Male,18,FirstYear,Comp,7 to 9,8,4 to 5,9,5,Grt than 10k,5 hours,Rarely,Rarely,20:00-21:00,0,Nice
+02-07-2024 16:21,Female,19,SecondYear,ET,5 to 7,4,1 to 3,6,9,6k-8k,2 hours,Always,Always,20:00-21:00,1,
+02-07-2024 16:21,Male,19,SecondYear,Comp,7 to 9,7,0,4,3,2k-4k,1 hour,Sometimes,Rarely,19:00-20:00,0,NA
+02-07-2024 16:23,Female,19,SecondYear,ET,5 to 7,6,4 to 5,3,10,6k-8k,3 hours,Always,Always,20:00-21:00,2,
+02-07-2024 16:23,Female,18,FirstYear,AIML,5 to 7,5,1 to 3,8,8,Grt than 10k,5 hours,Sometimes,Sometimes,20:00-21:00,0,Nice
+02-07-2024 16:23,Male,20,SecondYear,AIML,7 to 9,6,1 to 3,2,3,4k-6k,4 hours,Rarely,Often,20:00-21:00,0,
+02-07-2024 16:23,Male,19,FirstYear,AIML,7 to 9,6,0,6,9,2k-4k,5 hours,Rarely,Rarely,21:00-22:00,0,
+02-07-2024 16:32,Female,20,SecondYear,AIML,5 to 7,4,1 to 3,3,8,0-2k,2 hours,Often,Always,20:00-21:00,0,
+02-07-2024 16:34,Male,19,FirstYear,Mech,5 to 7,8,1 to 3,7,3,4k-6k,1 hour,Rarely,Often,19:00-20:00,0,:)
+02-07-2024 16:36,Male,24,FirstYear,ChemIC,5 to 7,4,0,5,8,2k-4k,2 hours,Rarely,Rarely,21:00-22:00,1,im feeling very sleepy after this survey
+02-07-2024 16:38,Male,21,ThirdYear,ChemIC,5 to 7,6,4 to 5,6,6,0-2k,1 hour,Rarely,Often,20:00-21:00,0,
+02-07-2024 16:41,Male,21,BTech,IT,7 to 9,7,0,10,8,8k-10k,4 hours,Rarely,Always,19:00-20:00,0,fair
+02-07-2024 16:42,Male,19,SecondYear,AIML,5 to 7,7,0,8,8,6k-8k,3 hours,Sometimes,Rarely,20:00-21:00,0,
+02-07-2024 16:45,Male,18,FirstYear,Comp,5 to 7,7,4 to 5,7,7,6k-8k,4 hours,Sometimes,Sometimes,20:00-21:00,1,
+02-07-2024 16:55,Male,20,SecondYear,AIML,5 to 7,5,1 to 3,3,8,0-2k,1 hour,Often,Always,20:00-21:00,0,Good 
+02-07-2024 17:01,Male,18,FirstYear,Comp,5 to 7,8,6 to 7,8,6,6k-8k,2 hours,Sometimes,Often,20:00-21:00,1,
+02-07-2024 17:03,Male,20,SecondYear,Comp,7 to 9,9,1 to 3,7,8,6k-8k,1 hour,Rarely,Sometimes,20:00-21:00,0,
+02-07-2024 17:03,Female,18,FirstYear,AIML,7 to 9,7,1 to 3,7,7,6k-8k,1 hour,Rarely,Sometimes,20:00-21:00,0,
+02-07-2024 17:04,Male,20,SecondYear,AIML,7 to 9,9,1 to 3,6,3,4k-6k,1 hour,Rarely,Never,20:00-21:00,0,
+02-07-2024 17:08,Male,18,FirstYear,AIML,5 to 7,7,1 to 3,8,4,6k-8k,1 hour,Sometimes,Often,20:00-21:00,0,
+02-07-2024 17:13,Male,19,SecondYear,ChemIC,5 to 7,8,0,8,6,4k-6k,3 hours,Never,Always,21:00-22:00,2,Jai shree ram
+02-07-2024 17:22,Female,20,SecondYear,AIML,0 to 5,4,0,7,9,2k-4k,1 hour,Rarely,Sometimes,21:00-22:00,1,
+02-07-2024 17:29,Female,19,FirstYear,ChemIC,5 to 7,8,1 to 3,4,6,6k-8k,1 hour,Often,Often,20:00-21:00,2,Good enough 
+02-07-2024 17:36,Female,19,FirstYear,ChemIC,7 to 9,10,1 to 3,10,5,8k-10k,1 hour,Sometimes,Rarely,20:00-21:00,0,
+02-07-2024 17:44,Female,20,SecondYear,AIML,7 to 9,7,0,5,4,4k-6k,2 hours,Sometimes,Often,20:00-21:00,0,
+02-07-2024 17:44,Male,18,FirstYear,AIML,7 to 9,7,6 to 7,7,5,6k-8k,5 hours,Rarely,Always,20:00-21:00,1,
+02-07-2024 17:56,Male,21,SecondYear,AIML,5 to 7,5,1 to 3,4,4,2k-4k,5 hours,Sometimes,Sometimes,21:00-22:00,0,
+02-07-2024 18:18,Female,19,SecondYear,ET,9,10,4 to 5,9,7,8k-10k,2 hours,Often,Rarely,19:00-20:00,0,
+02-07-2024 18:41,Female,19,SecondYear,Comp,5 to 7,8,1 to 3,7,8,8k-10k,4 hours,Rarely,Rarely,20:00-21:00,0,
+02-07-2024 19:10,Female,19,SecondYear,ChemIC,5 to 7,5,0,2,8,4k-6k,1 hour,Sometimes,Rarely,20:00-21:00,0,
+02-07-2024 19:14,Male,19,SecondYear,ET,5 to 7,6,0,8,8,6k-8k,3 hours,Rarely,Always,22:00-23:00,1,
+02-07-2024 19:41,Male,20,SecondYear,IT,5 to 7,8,1 to 3,6,2,8k-10k,5 hours,Rarely,Sometimes,20:00-21:00,1,
+02-07-2024 19:43,Male,18,FirstYear,AIML,5 to 7,6,0,5,6,2k-4k,2 hours,Often,Sometimes,19:00-20:00,0,
+02-07-2024 19:56,Male,20,SecondYear,IT,0 to 5,7,0,4,7,0-2k,5 hours,Often,Often,20:00-21:00,2,
+02-07-2024 20:11,Female,20,SecondYear,IT,9,10,6 to 7,6,1,6k-8k,1 hour,Rarely,Rarely,20:00-21:00,0,
+02-07-2024 20:15,Male,20,SecondYear,AIML,0 to 5,4,1 to 3,4,8,6k-8k,1 hour,Often,Often,20:00-21:00,0,
+02-07-2024 20:43,Female,19,SecondYear,ET,5 to 7,8,0,1,8,4k-6k,1 hour,Sometimes,Never,23:00+,0,All the best for your project 
+02-07-2024 20:44,Male,18,SecondYear,ChemIC,0 to 5,4,0,8,9,8k-10k,5 hours,Rarely,Always,22:00-23:00,3,Dont join veloce
+02-07-2024 21:38,Female,18,FirstYear,AIML,5 to 7,7,1 to 3,6,5,4k-6k,1 hour,Rarely,Often,21:00-22:00,1,Genuine questions were asked
+02-07-2024 21:41,Male,18,FirstYear,AIML,5 to 7,8,1 to 3,7,7,Grt than 10k,1 hour,Never,Always,20:00-21:00,0,The survey was on point and included the factors about which anyone can give their honest response.
+02-07-2024 23:18,Female,22,BTech,ChemIC,5 to 7,5,4 to 5,8,7,8k-10k,2 hours,Sometimes,Often,20:00-21:00,2,
+02-08-2024 00:14,Male,22,BTech,AIML,5 to 7,6,1 to 3,10,8,4k-6k,2 hours,Often,Sometimes,21:00-22:00,0,What kind of this project will be are you going to create any app like sleep monitor etc. 
+02-08-2024 00:22,Female,18,FirstYear,AIML,5 to 7,7,1 to 3,4,8,4k-6k,2 hours,Rarely,Rarely,21:00-22:00,1,
+02-08-2024 01:05,Male,20,SecondYear,IT,5 to 7,5,1 to 3,7,5,6k-8k,4 hours,Rarely,Sometimes,21:00-22:00,0,Enlightening 
+02-08-2024 01:45,Male,21,BTech,ChemIC,7 to 9,9,1 to 3,7,7,2k-4k,3 hours,Never,Often,20:00-21:00,0,
+02-08-2024 07:17,Female,18,FirstYear,IT,5 to 7,6,0,6,8,2k-4k,1 hour,Rarely,Sometimes,21:00-22:00,1,
+02-08-2024 10:24,Female,18,FirstYear,AIML,7 to 9,8,0,8,3,4k-6k,2 hours,Sometimes,Sometimes,19:00-20:00,0,
+02-08-2024 10:37,Male,21,BTech,ChemIC,0 to 5,7,1 to 3,9,6,4k-6k,1 hour,Rarely,Never,22:00-23:00,0,
+02-08-2024 10:49,Male,22,BTech,ChemIC,5 to 7,5,0,7,5,0-2k,4 hours,Sometimes,Often,21:00-22:00,0,NA
+02-08-2024 11:09,Male,18,SecondYear,Mech,0 to 5,3,1 to 3,6,3,0-2k,1 hour,Often,Always,20:00-21:00,1,
+02-08-2024 11:18,Male,18,FirstYear,IT,5 to 7,10,0,7,1,2k-4k,3 hours,Sometimes,Always,20:00-21:00,0,
+02-08-2024 12:23,Male,20,SecondYear,AIML,5 to 7,8,1 to 3,5,2,6k-8k,1 hour,Rarely,Rarely,19:00-20:00,0,Nice 
+02-08-2024 12:23,Male,19,SecondYear,AIML,5 to 7,6,1 to 3,8,3,8k-10k,3 hours,Never,Never,20:00-21:00,0,
+02-08-2024 12:27,Male,18,SecondYear,IT,5 to 7,1,0,8,6,4k-6k,5 hours,Sometimes,Always,20:00-21:00,1,Lund survey par bhai ke liye kuch bhi
+02-08-2024 12:29,Female,19,SecondYear,ET,5 to 7,9,0,4,10,2k-4k,2 hours,Sometimes,Always,20:00-21:00,1,
+02-08-2024 12:30,Male,20,SecondYear,ChemIC,5 to 7,10,1 to 3,6,10,Grt than 10k,5 hours,Rarely,Often,20:00-21:00,0,Alhamdulillah   Maksad Nahi Bhulna
+02-08-2024 12:30,Female,18,SecondYear,ET,7 to 9,1,0,1,10,0-2k,3 hours,Sometimes,Always,22:00-23:00,0,Paise bhej bc. (Gpay No.: +91 86686 09090)
+02-08-2024 12:54,Male,20,SecondYear,ET,5 to 7,6,1 to 3,5,5,6k-8k,3 hours,Rarely,Sometimes,22:00-23:00,0,Great survey 
+02-08-2024 14:37,Male,20,ThirdYear,ChemIC,7 to 9,7,1 to 3,1,8,2k-4k,2 hours,Sometimes,Never,22:00-23:00,0,A good initiative.
+02-08-2024 16:31,Male,20,SecondYear,AIML,5 to 7,6,4 to 5,7,6,6k-8k,1 hour,Rarely,Rarely,20:00-21:00,0,
+02-08-2024 16:51,Male,19,SecondYear,ET,5 to 7,5,1 to 3,9,10,6k-8k,4 hours,Never,Never,20:00-21:00,0,
+02-08-2024 22:18,Male,20,SecondYear,Mech,5 to 7,9,0,8,4,2k-4k,1 hour,Never,Rarely,20:00-21:00,0,
+02-12-2024 10:55,Male,19,SecondYear,Comp,0 to 5,5,6 to 7,1,4,4k-6k,1 hour,Sometimes,Always,21:00-22:00,1,Good 👍🏼
+02-12-2024 13:46,Male,19,SecondYear,ET,0 to 5,10,1 to 3,3,5,6k-8k,5 hours,Rarely,Often,20:00-21:00,3,Swan
+02-12-2024 15:12,Female,18,SecondYear,ET,7 to 9,6,0,8,4,6k-8k,1 hour,Sometimes,Sometimes,19:00-20:00,0,Its nice
+02-12-2024 15:18,Male,21,SecondYear,ET,5 to 7,4,1 to 3,4,8,2k-4k,1 hour,Always,Rarely,20:00-21:00,0,
+02-12-2024 15:21,Male,19,SecondYear,ET,5 to 7,6,1 to 3,6,10,8k-10k,2 hours,Often,Often,20:00-21:00,1,
+02-12-2024 15:30,Male,21,SecondYear,ET,5 to 7,4,1 to 3,4,9,0-2k,5 hours,Rarely,Sometimes,23:00+,1,"Please do let us know what were the result of your project, I am genuinely interested. Thank you. and  [On an average, how many nights in a week do you go through without sleep? its answer is 1 day/week]"
+02-12-2024 15:53,Male,20,SecondYear,ET,9,10,6 to 7,10,1,0-2k,5 hours,Never,Never,21:00-22:00,0,
+02-12-2024 17:13,Male,20,SecondYear,ET,5 to 7,8,6 to 7,8,6,4k-6k,3 hours,Rarely,Often,23:00+,1,
+2/14/2024 11:54:36,Male,19,SecondYear,Comp,0 to 5,4,1 to 3,4,5,4k-6k,4 hours,Sometimes,Rarely,20:00-21:00,1,
+2/21/2024 10:36:35,Female,22,BTech,Comp,0 to 5,5,0,5,10,4k-6k,4 hours,Always,Always,23:00+,5,
+2/21/2024 10:39:03,Male,21,ThirdYear,Mech,0 to 5,4,1 to 3,6,8,2k-4k,3 hours,Often,Often,22:00-23:00,3,
+2/21/2024 10:40:34,Male,19,FirstYear,ET,5 to 7,7,4 to 5,7,6,6k-8k,3 hours,Sometimes,Often,21:00-22:00,2,
+2/21/2024 10:41:55,Female,20,SecondYear,ET,5 to 7,4,1 to 3,7,7,6k-8k,3 hours,Often,Often,22:00-23:00,1,
+2/21/2024 10:45:14,Female,22,BTech,ChemIC,5 to 7,6,4 to 5,5,6,8k-10k,2 hours,Often,Often,21:00-22:00,2,
+2/21/2024 10:46:10,Male,20,SecondYear,Comp,5 to 7,4,0,5,7,6k-8k,2 hours,Sometimes,Always,20:00-21:00,1,
+2/21/2024 10:47:09,Male,19,FirstYear,IT,7 to 9,4,4 to 5,5,6,6k-8k,2 hours,Often,Often,20:00-21:00,2,
+2/21/2024 10:49:25,Male,23,BTech,ChemIC,5 to 7,5,1 to 3,7,6,Grt than 10k,4 hours,Always,Sometimes,21:00-22:00,2,
+2/21/2024 10:50:30,Female,20,SecondYear,AIML,7 to 9,7,0,6,6,8k-10k,2 hours,Sometimes,Often,22:00-23:00,2,
+2/21/2024 10:51:36,Male,20,ThirdYear,ET,0 to 5,7,0,5,8,4k-6k,2 hours,Sometimes,Never,21:00-22:00,2,
+2/21/2024 10:59:31,Male,21,SecondYear,Mech,7 to 9,6,1 to 3,9,7,Grt than 10k,2 hours,Rarely,Rarely,22:00-23:00,1,
+2/21/2024 11:00:16,Male,20,SecondYear,IT,5 to 7,8,1 to 3,6,8,8k-10k,3 hours,Rarely,Sometimes,23:00+,2,
+2/21/2024 11:01:14,Male,20,SecondYear,IT,7 to 9,8,0,5,8,6k-8k,2 hours,Sometimes,Rarely,21:00-22:00,1,
+2/21/2024 11:04:46,Female,19,SecondYear,Comp,5 to 7,4,0,8,10,0-2k,1 hour,Sometimes,Always,20:00-21:00,0,
+2/21/2024 11:05:13,Female,20,SecondYear,Comp,7 to 9,10,1 to 3,6,4,2k-4k,3 hours,Sometimes,Always,20:00-21:00,0,
+2/21/2024 11:06:22,Male,19,SecondYear,Comp,0 to 5,5,1 to 3,6,10,6k-8k,5 hours,Rarely,Often,23:00+,3,sab tru hai ;-;
+2/21/2024 11:08:36,Male,19,SecondYear,Comp,7 to 9,10,0,6,6,6k-8k,5 hours,Rarely,Never,21:00-22:00,0,"Some qns like ""How many hours do you use electronic devices before sleep?"" are ambiguous"
+2/21/2024 11:17:17,Male,19,SecondYear,Comp,0 to 5,6,0,4,4,6k-8k,1 hour,Sometimes,Often,20:00-21:00,1,you might want to consider caffeine intake before bed as well... Might give you another parameter to analyse
+2/21/2024 11:18:25,Female,19,SecondYear,Comp,5 to 7,6,1 to 3,7,9,2k-4k,2 hours,Often,Always,20:00-21:00,1,.
+2/21/2024 11:19:44,Male,21,SecondYear,Comp,5 to 7,3,1 to 3,10,10,4k-6k,5 hours,Sometimes,Sometimes,20:00-21:00,1,.
+2/21/2024 11:20:09,Female,20,SecondYear,Comp,7 to 9,10,1 to 3,7,1,6k-8k,2 hours,Rarely,Sometimes,20:00-21:00,0,
+2/21/2024 11:23:09,Male,21,SecondYear,Comp,9,10,6 to 7,1,1,Grt than 10k,1 hour,Always,Always,23:00+,7,.
+2/21/2024 11:29:17,Male,19,SecondYear,Comp,7 to 9,8,0,9,7,4k-6k,3 hours,Sometimes,Rarely,19:00-20:00,0,
+2/21/2024 11:31:00,Male,18,FirstYear,ChemIC,5 to 7,8,0,5,7,2k-4k,1 hour,Rarely,Sometimes,20:00-21:00,0,
+2/21/2024 11:31:05,Female,19,SecondYear,Mech,0 to 5,1,0,10,10,0-2k,5 hours,Always,Always,23:00+,7,
+2/21/2024 11:31:06,Male,20,SecondYear,ChemIC,7 to 9,8,1 to 3,3,4,6k-8k,3 hours,Sometimes,Sometimes,20:00-21:00,0,
+2/21/2024 11:31:16,Male,21,ThirdYear,ChemIC,7 to 9,6,0,8,10,2k-4k,4 hours,Rarely,Often,20:00-21:00,2, 
+2/21/2024 11:31:17,Male,19,FirstYear,Comp,5 to 7,7,1 to 3,4,3,8k-10k,3 hours,Rarely,Rarely,20:00-21:00,2,Nice informative approach 
+2/21/2024 11:31:18,Male,18,FirstYear,AIML,5 to 7,1,0,4,10,0-2k,5 hours,Sometimes,Often,19:00-20:00,2,
+2/21/2024 11:31:44,Male,21,ThirdYear,Mech,5 to 7,5,6 to 7,8,5,2k-4k,4 hours,Rarely,Rarely,19:00-20:00,0,
+2/21/2024 11:32:10,Male,20,ThirdYear,Mech,5 to 7,7,0,7,9,0-2k,1 hour,Sometimes,Often,22:00-23:00,1, 
+2/21/2024 11:32:12,Female,20,SecondYear,ChemIC,5 to 7,6,1 to 3,2,7,4k-6k,4 hours,Often,Rarely,20:00-21:00,3,
+2/21/2024 11:32:21,Male,19,SecondYear,Comp,0 to 5,7,6 to 7,8,5,4k-6k,2 hours,Rarely,Sometimes,19:00-20:00,0,Sleep
+2/21/2024 11:32:30,Male,18,FirstYear,Mech,5 to 7,5,1 to 3,7,4,6k-8k,3 hours,Sometimes,Sometimes,20:00-21:00,2,
+2/21/2024 11:32:48,Male,18,FirstYear,AIML,7 to 9,10,1 to 3,8,1,8k-10k,3 hours,Rarely,Never,20:00-21:00,0,
+2/21/2024 11:33:16,Male,22,ThirdYear,AIML,5 to 7,7,6 to 7,6,9,2k-4k,2 hours,Sometimes,Often,21:00-22:00,0,nice
+2/21/2024 11:33:18,Male,21,ThirdYear,ET,5 to 7,1,6 to 7,6,6,4k-6k,3 hours,Rarely,Always,21:00-22:00,5,
+2/21/2024 11:33:32,Male,18,FirstYear,AIML,5 to 7,10,1 to 3,6,7,2k-4k,1 hour,Rarely,Rarely,20:00-21:00,0,
+2/21/2024 11:33:41,Male,21,ThirdYear,AIML,5 to 7,6,0,6,4,0-2k,3 hours,Rarely,Always,21:00-22:00,1,
+2/21/2024 11:34:04,Male,21,ThirdYear,Mech,5 to 7,8,6 to 7,8,9,4k-6k,3 hours,Sometimes,Often,21:00-22:00,0,
+2/21/2024 11:34:12,Male,19,SecondYear,IT,7 to 9,5,1 to 3,8,8,6k-8k,5 hours,Rarely,Never,20:00-21:00,0,
+2/21/2024 11:34:13,Male,19,SecondYear,Comp,5 to 7,6,0,5,9,4k-6k,4 hours,Never,Sometimes,20:00-21:00,2,
+2/21/2024 11:34:13,Male,19,SecondYear,Comp,7 to 9,4,1 to 3,8,7,8k-10k,3 hours,Sometimes,Sometimes,21:00-22:00,2,
+2/21/2024 11:34:35,Male,18,FirstYear,ChemIC,5 to 7,8,4 to 5,9,8,Grt than 10k,5 hours,Sometimes,Rarely,20:00-21:00,0,
+2/21/2024 11:34:40,Male,20,ThirdYear,Comp,0 to 5,3,0,8,9,Grt than 10k,2 hours,Rarely,Never,20:00-21:00,1,
+2/21/2024 11:34:46,Male,19,SecondYear,AIML,0 to 5,3,4 to 5,3,10,Grt than 10k,5 hours,Often,Always,21:00-22:00,4,"Nice project, It's relatable to our life."
+2/21/2024 11:35:30,Male,20,SecondYear,Mech,5 to 7,8,1 to 3,9,7,6k-8k,5 hours,Rarely,Always,20:00-21:00,0,NA
+2/21/2024 11:35:34,Male,22,BTech,Mech,7 to 9,5,6 to 7,3,4,4k-6k,2 hours,Rarely,Sometimes,20:00-21:00,0,
+2/21/2024 11:35:39,Male,23,BTech,ChemIC,7 to 9,8,1 to 3,5,2,2k-4k,1 hour,Never,Never,20:00-21:00,0,
+2/21/2024 11:35:49,Male,20,SecondYear,ET,7 to 9,10,4 to 5,8,8,8k-10k,1 hour,Never,Sometimes,20:00-21:00,0,
+2/21/2024 11:36:02,Male,22,BTech,Mech,5 to 7,7,1 to 3,9,9,2k-4k,2 hours,Always,Always,20:00-21:00,1,
+2/21/2024 11:36:18,Male,22,ThirdYear,ChemIC,5 to 7,3,0,3,10,4k-6k,5 hours,Sometimes,Often,21:00-22:00,3,Good
+2/21/2024 11:36:35,Female,20,ThirdYear,ChemIC,5 to 7,6,6 to 7,5,7,6k-8k,3 hours,Sometimes,Always,21:00-22:00,5,Good enough 
+2/21/2024 11:36:53,Male,19,SecondYear,Comp,5 to 7,5,6 to 7,5,8,4k-6k,4 hours,Sometimes,Often,20:00-21:00,1,
+2/21/2024 11:37:02,Female,24,FirstYear,Mech,0 to 5,1,0,1,10,0-2k,5 hours,Always,Always,23:00+,7,
+2/21/2024 11:37:16,Male,19,ThirdYear,ChemIC,5 to 7,3,1 to 3,10,8,6k-8k,1 hour,Sometimes,Often,22:00-23:00,2,
+2/21/2024 11:37:34,Female,20,ThirdYear,Comp,5 to 7,6,1 to 3,4,4,0-2k,4 hours,Sometimes,Always,20:00-21:00,1,
+2/21/2024 11:37:36,Male,20,ThirdYear,ChemIC,0 to 5,1,0,10,10,Grt than 10k,5 hours,Always,Sometimes,20:00-21:00,0,Good Analysis 
+2/21/2024 11:38:42,Male,20,ThirdYear,Comp,5 to 7,6,0,3,6,0-2k,2 hours,Rarely,Rarely,21:00-22:00,0,
+2/21/2024 11:39:14,Male,19,SecondYear,IT,7 to 9,10,4 to 5,4,10,Grt than 10k,1 hour,Sometimes,Sometimes,20:00-21:00,1,
+2/21/2024 11:39:35,Male,18,FirstYear,IT,5 to 7,4,6 to 7,4,9,0-2k,4 hours,Often,Often,20:00-21:00,0,
+2/21/2024 11:40:43,Female,19,FirstYear,IT,7 to 9,9,1 to 3,8,5,6k-8k,1 hour,Rarely,Often,20:00-21:00,1,
+2/21/2024 11:41:03,Female,18,FirstYear,IT,7 to 9,5,1 to 3,5,5,2k-4k,2 hours,Often,Often,21:00-22:00,0,
+2/21/2024 11:41:14,Male,20,ThirdYear,ChemIC,5 to 7,8,4 to 5,7,9,4k-6k,3 hours,Sometimes,Often,20:00-21:00,1,Interesting questions 
+2/21/2024 11:41:20,Male,20,ThirdYear,Mech,7 to 9,9,0,8,6,0-2k,1 hour,Never,Always,20:00-21:00,0,I think you can add more relevant questions ...
+2/21/2024 11:42:08,Male,19,FirstYear,AIML,5 to 7,7,0,8,8,2k-4k,1 hour,Sometimes,Often,20:00-21:00,0,Damn
+2/21/2024 11:42:15,Male,18,FirstYear,AIML,5 to 7,8,1 to 3,5,7,4k-6k,1 hour,Never,Always,20:00-21:00,0,
+2/21/2024 11:42:19,Male,19,SecondYear,IT,7 to 9,9,1 to 3,8,3,8k-10k,2 hours,Sometimes,Rarely,20:00-21:00,0,
+2/21/2024 11:42:54,Male,21,ThirdYear,Comp,5 to 7,7,0,8,5,4k-6k,1 hour,Rarely,Always,21:00-22:00,1,
+2/21/2024 11:43:28,Male,19,FirstYear,ChemIC,7 to 9,8,4 to 5,7,6,6k-8k,5 hours,Sometimes,Often,20:00-21:00,2,
+2/21/2024 11:45:01,Male,21,ThirdYear,ET,5 to 7,8,0,6,8,6k-8k,1 hour,Sometimes,Often,20:00-21:00,0,-
+2/21/2024 11:45:04,Female,21,BTech,Mech,5 to 7,6,4 to 5,8,7,8k-10k,3 hours,Often,Rarely,21:00-22:00,0,
+2/21/2024 11:45:12,Male,19,SecondYear,Comp,5 to 7,7,1 to 3,7,3,8k-10k,3 hours,Never,Often,20:00-21:00,0,You may also add a question...do you feel sleepy throughout the day ...(because I do feel sleepy even after afternoon naps)...
+2/21/2024 11:45:45,Male,19,FirstYear,AIML,0 to 5,3,0,9,5,4k-6k,2 hours,Rarely,Always,21:00-22:00,1,
+2/21/2024 11:45:47,Male,21,ThirdYear,Comp,7 to 9,10,0,6,8,6k-8k,3 hours,Rarely,Rarely,21:00-22:00,0,
+2/21/2024 11:45:54,Female,20,SecondYear,Comp,5 to 7,8,1 to 3,8,4,6k-8k,3 hours,Rarely,Rarely,20:00-21:00,0,Good
+2/21/2024 11:47:58,Female,20,ThirdYear,Mech,9,9,4 to 5,7,10,4k-6k,3 hours,Often,Always,20:00-21:00,0,
+2/21/2024 11:48:34,Female,20,ThirdYear,AIML,7 to 9,8,0,9,9,4k-6k,3 hours,Sometimes,Always,19:00-20:00,2,
+2/21/2024 11:49:58,Male,20,ThirdYear,Comp,7 to 9,6,1 to 3,3,6,6k-8k,1 hour,Sometimes,Sometimes,20:00-21:00,2,Y
+2/21/2024 11:50:17,Male,20,ThirdYear,AIML,5 to 7,7,1 to 3,8,7,2k-4k,1 hour,Rarely,Always,21:00-22:00,1,
+2/21/2024 11:50:53,Male,20,ThirdYear,AIML,0 to 5,1,0,10,10,Grt than 10k,5 hours,Always,Always,23:00+,7,
+2/21/2024 11:51:47,Female,20,ThirdYear,Comp,9,7,0,3,7,6k-8k,1 hour,Rarely,Always,20:00-21:00,2,Nice questions asked
+2/21/2024 11:52:13,Male,20,ThirdYear,ET,7 to 9,10,1 to 3,7,1,2k-4k,2 hours,Rarely,Rarely,20:00-21:00,0,
+2/21/2024 11:52:41,Male,19,SecondYear,Comp,5 to 7,5,4 to 5,6,5,6k-8k,2 hours,Always,Sometimes,20:00-21:00,0,
+2/21/2024 11:52:51,Male,20,ThirdYear,IT,5 to 7,7,1 to 3,7,4,8k-10k,1 hour,Rarely,Rarely,20:00-21:00,0,
+2/21/2024 11:53:31,Male,20,ThirdYear,Comp,5 to 7,7,4 to 5,7,5,4k-6k,3 hours,Rarely,Sometimes,19:00-20:00,0,
+2/21/2024 11:53:42,Male,18,FirstYear,ET,5 to 7,5,1 to 3,4,7,6k-8k,1 hour,Sometimes,Sometimes,20:00-21:00,0,
+2/21/2024 11:54:00,Male,19,SecondYear,AIML,5 to 7,10,1 to 3,5,5,6k-8k,4 hours,Rarely,Often,20:00-21:00,0,
+2/21/2024 11:54:59,Male,17,FirstYear,IT,0 to 5,10,0,8,5,6k-8k,2 hours,Often,Often,20:00-21:00,0,
+2/21/2024 11:55:34,Male,19,SecondYear,Comp,5 to 7,6,0,10,5,4k-6k,5 hours,Rarely,Never,20:00-21:00,0,
+2/21/2024 11:55:37,Male,20,ThirdYear,ET,9,5,1 to 3,5,10,4k-6k,1 hour,Always,Always,20:00-21:00,0,NA
+2/21/2024 11:56:06,Female,20,ThirdYear,AIML,7 to 9,7,1 to 3,4,8,2k-4k,2 hours,Rarely,Sometimes,21:00-22:00,0,-
+2/21/2024 11:58:11,Female,20,SecondYear,AIML,5 to 7,7,1 to 3,7,5,4k-6k,1 hour,Sometimes,Often,20:00-21:00,0,
+2/21/2024 11:58:18,Male,21,ThirdYear,Mech,5 to 7,7,1 to 3,4,5,0-2k,5 hours,Sometimes,Often,23:00+,0,
+2/21/2024 11:59:00,Male,20,SecondYear,AIML,7 to 9,9,6 to 7,3,5,4k-6k,5 hours,Never,Rarely,20:00-21:00,0,No
+2/21/2024 11:59:07,Male,19,FirstYear,AIML,5 to 7,8,4 to 5,8,4,6k-8k,3 hours,Rarely,Rarely,20:00-21:00,0,
+2/21/2024 12:01:50,Female,18,SecondYear,IT,5 to 7,5,1 to 3,5,5,6k-8k,1 hour,Sometimes,Always,19:00-20:00,0,Nice effort
+2/21/2024 12:02:06,Male,19,FirstYear,AIML,5 to 7,8,1 to 3,4,7,6k-8k,1 hour,Sometimes,Often,20:00-21:00,0,
+2/21/2024 12:02:44,Male,19,SecondYear,Comp,5 to 7,6,0,1,8,0-2k,3 hours,Rarely,Often,20:00-21:00,0,
+2/21/2024 12:02:55,Male,20,SecondYear,AIML,5 to 7,4,1 to 3,2,7,0-2k,1 hour,Rarely,Always,20:00-21:00,0,
+2/21/2024 12:03:32,Male,20,SecondYear,AIML,7 to 9,9,0,8,5,6k-8k,3 hours,Rarely,Never,21:00-22:00,0,
+2/21/2024 12:03:49,Female,17,FirstYear,Comp,7 to 9,8,1 to 3,9,7,2k-4k,2 hours,Rarely,Sometimes,20:00-21:00,0,Nice
+2/21/2024 12:04:08,Female,20,SecondYear,Comp,5 to 7,5,0,5,2,0-2k,4 hours,Never,Sometimes,20:00-21:00,0,.
+2/21/2024 12:04:15,Male,20,SecondYear,AIML,5 to 7,7,1 to 3,9,9,Grt than 10k,2 hours,Sometimes,Sometimes,20:00-21:00,1,
+2/21/2024 12:04:35,Female,20,ThirdYear,ChemIC,7 to 9,8,1 to 3,8,5,2k-4k,1 hour,Rarely,Sometimes,21:00-22:00,0,
+2/21/2024 12:04:45,Male,20,ThirdYear,IT,7 to 9,7,0,6,5,6k-8k,1 hour,Rarely,Rarely,20:00-21:00,0,
+2/21/2024 12:04:46,Male,20,ThirdYear,ET,5 to 7,9,1 to 3,10,3,Grt than 10k,1 hour,Rarely,Rarely,20:00-21:00,0,NA
+2/21/2024 12:05:08,Male,21,SecondYear,Mech,7 to 9,5,1 to 3,7,6,0-2k,2 hours,Rarely,Rarely,21:00-22:00,0,I think instead of asking number steps you could ask distance its more comparable and i think questions are little open ended try to be a lottle more specific (unless thats your agenda) Best of HARDWORK for your project
+2/21/2024 12:05:12,Male,24,BTech,ChemIC,7 to 9,9,4 to 5,9,6,6k-8k,3 hours,Rarely,Often,21:00-22:00,0,
+2/21/2024 12:05:44,Male,20,SecondYear,AIML,5 to 7,8,1 to 3,8,2,6k-8k,5 hours,Rarely,Always,21:00-22:00,1,
+2/21/2024 12:06:53,Male,18,FirstYear,Mech,0 to 5,10,1 to 3,5,10,Grt than 10k,5 hours,Sometimes,Sometimes,20:00-21:00,7,
+2/21/2024 12:07:23,Male,21,ThirdYear,ET,5 to 7,8,1 to 3,9,4,8k-10k,1 hour,Rarely,Rarely,19:00-20:00,0,
+2/21/2024 12:07:24,Male,20,ThirdYear,ChemIC,0 to 5,1,0,1,10,Grt than 10k,5 hours,Always,Always,23:00+,7,😊
+2/21/2024 12:08:53,Female,18,FirstYear,AIML,5 to 7,4,1 to 3,5,8,6k-8k,1 hour,Often,Always,20:00-21:00,2,
+2/21/2024 12:09:50,Male,18,SecondYear,AIML,5 to 7,6,6 to 7,7,4,6k-8k,1 hour,Rarely,Always,20:00-21:00,1,
+2/21/2024 12:12:51,Male,19,SecondYear,Comp,5 to 7,8,1 to 3,9,5,6k-8k,1 hour,Never,Sometimes,20:00-21:00,0,
+2/21/2024 12:15:16,Male,20,ThirdYear,IT,5 to 7,7,1 to 3,8,7,4k-6k,2 hours,Rarely,Never,21:00-22:00,0,
+2/21/2024 12:15:22,Male,19,FirstYear,IT,5 to 7,8,0,1,10,Grt than 10k,5 hours,Always,Always,23:00+,7,Bahutbadiya he survey 
+2/21/2024 12:15:57,Male,18,FirstYear,IT,7 to 9,9,1 to 3,7,6,2k-4k,1 hour,Rarely,Often,20:00-21:00,0,Very nice questions
+2/21/2024 12:16:05,Female,20,SecondYear,ChemIC,5 to 7,10,1 to 3,3,2,4k-6k,5 hours,Often,Never,20:00-21:00,0,
+2/21/2024 12:16:33,Female,21,ThirdYear,Mech,5 to 7,6,4 to 5,9,5,4k-6k,2 hours,Rarely,Often,21:00-22:00,0,
+2/21/2024 12:16:58,Male,20,SecondYear,Comp,7 to 9,8,0,4,8,4k-6k,1 hour,Sometimes,Sometimes,20:00-21:00,0,
+2/21/2024 12:18:22,Male,18,FirstYear,Mech,7 to 9,6,0,3,1,4k-6k,1 hour,Never,Never,20:00-21:00,0,
+2/21/2024 12:19:04,Female,20,SecondYear,Comp,0 to 5,1,0,6,7,2k-4k,1 hour,Sometimes,Always,22:00-23:00,1,
+2/21/2024 12:21:33,Male,19,FirstYear,Comp,7 to 9,5,0,6,5,8k-10k,1 hour,Sometimes,Rarely,20:00-21:00,1,
+2/21/2024 12:33:25,Male,19,SecondYear,Comp,7 to 9,8,0,8,5,4k-6k,1 hour,Sometimes,Rarely,20:00-21:00,0,
+2/21/2024 12:35:21,Female,21,ThirdYear,Comp,7 to 9,8,1 to 3,6,3,2k-4k,1 hour,Sometimes,Rarely,20:00-21:00,0,Nice
+2/21/2024 12:38:03,Male,18,FirstYear,AIML,5 to 7,6,0,6,6,4k-6k,3 hours,Rarely,Always,20:00-21:00,0,Put question for sleep paralysis
+2/21/2024 12:40:32,Female,18,SecondYear,Comp,7 to 9,6,0,2,8,0-2k,5 hours,Often,Sometimes,20:00-21:00,0,
+2/21/2024 12:45:39,Male,21,ThirdYear,Comp,7 to 9,9,0,1,10,0-2k,2 hours,Often,Always,21:00-22:00,0,
+2/21/2024 12:49:36,Male,19,SecondYear,Comp,5 to 7,4,0,7,9,0-2k,3 hours,Rarely,Always,22:00-23:00,0,No
+2/21/2024 12:50:30,Male,18,FirstYear,Comp,5 to 7,7,1 to 3,6,8,4k-6k,5 hours,Sometimes,Sometimes,19:00-20:00,0,
+2/21/2024 12:56:20,Female,19,SecondYear,Comp,5 to 7,8,1 to 3,5,7,2k-4k,5 hours,Sometimes,Often,21:00-22:00,2,
+2/21/2024 12:58:27,Male,19,FirstYear,AIML,7 to 9,9,4 to 5,9,6,6k-8k,5 hours,Never,Always,19:00-20:00,0,I realised my condition.
+2/21/2024 13:03:53,Female,19,SecondYear,AIML,0 to 5,3,1 to 3,8,10,0-2k,1 hour,Sometimes,Often,21:00-22:00,1,
+2/21/2024 13:08:28,Male,19,SecondYear,Comp,5 to 7,8,1 to 3,7,6,8k-10k,3 hours,Rarely,Never,23:00+,0,
+2/21/2024 13:13:18,Male,21,SecondYear,AIML,7 to 9,7,4 to 5,10,8,2k-4k,4 hours,Often,Always,21:00-22:00,0,
+2/21/2024 13:13:51,Male,21,BTech,Mech,7 to 9,7,1 to 3,7,5,0-2k,3 hours,Sometimes,Always,22:00-23:00,0,
+2/21/2024 13:14:02,Male,20,SecondYear,AIML,5 to 7,8,6 to 7,9,3,2k-4k,2 hours,Rarely,Rarely,20:00-21:00,0,😴😴😴😴😴
+2/21/2024 13:15:05,Male,20,SecondYear,IT,0 to 5,4,1 to 3,7,8,6k-8k,3 hours,Sometimes,Always,21:00-22:00,1,
+2/21/2024 13:17:37,Male,21,ThirdYear,AIML,7 to 9,8,0,7,8,Grt than 10k,3 hours,Rarely,Sometimes,20:00-21:00,0,People who have adequate sleep are also stressed hence the question should be. Do you feel stressed due to lack of sleep. Just my suggestion 
+2/21/2024 13:24:02,Male,19,SecondYear,ET,5 to 7,5,4 to 5,5,2,8k-10k,1 hour,Rarely,Always,21:00-22:00,4,
+2/21/2024 13:24:26,Male,18,FirstYear,IT,7 to 9,8,1 to 3,7,7,2k-4k,2 hours,Rarely,Never,20:00-21:00,0,
+2/21/2024 13:25:07,Female,21,ThirdYear,Mech,7 to 9,9,6 to 7,10,3,4k-6k,2 hours,Rarely,Sometimes,20:00-21:00,0,
+2/21/2024 13:26:12,Female,20,SecondYear,Comp,0 to 5,4,4 to 5,3,1,2k-4k,5 hours,Never,Always,20:00-21:00,2,
+2/21/2024 13:33:26,Male,21,ThirdYear,AIML,5 to 7,7,0,5,9,8k-10k,4 hours,Often,Often,21:00-22:00,0,
+2/21/2024 13:59:55,Female,19,FirstYear,Comp,5 to 7,8,1 to 3,7,10,4k-6k,1 hour,Often,Sometimes,20:00-21:00,0,
+2/21/2024 14:00:04,Female,19,SecondYear,Comp,7 to 9,8,1 to 3,7,9,6k-8k,1 hour,Sometimes,Sometimes,20:00-21:00,1,
+2/21/2024 14:02:34,Male,18,FirstYear,Mech,7 to 9,9,0,4,1,4k-6k,4 hours,Never,Rarely,20:00-21:00,0,
+2/21/2024 14:03:25,Female,20,ThirdYear,Mech,7 to 9,6,1 to 3,6,7,0-2k,3 hours,Always,Sometimes,20:00-21:00,2,
+2/21/2024 14:04:11,Male,21,ThirdYear,ET,5 to 7,6,0,2,7,6k-8k,5 hours,Rarely,Always,19:00-20:00,2,
+2/21/2024 14:09:58,Female,21,ThirdYear,Comp,5 to 7,6,1 to 3,4,9,0-2k,1 hour,Often,Always,21:00-22:00,1,
+2/21/2024 14:30:13,Male,21,ThirdYear,ET,5 to 7,4,4 to 5,8,6,8k-10k,4 hours,Rarely,Always,21:00-22:00,1,
+2/21/2024 14:55:15,Male,21,ThirdYear,ET,7 to 9,9,1 to 3,3,5,2k-4k,1 hour,Sometimes,Often,21:00-22:00,0,NA
+2/21/2024 15:10:29,Male,19,SecondYear,IT,7 to 9,7,0,3,8,2k-4k,4 hours,Often,Never,20:00-21:00,0,
+2/21/2024 15:11:46,Male,20,ThirdYear,Mech,5 to 7,9,0,8,7,2k-4k,4 hours,Sometimes,Always,21:00-22:00,0,-
+2/21/2024 15:32:28,Female,19,SecondYear,Comp,7 to 9,9,0,6,8,6k-8k,1 hour,Rarely,Never,21:00-22:00,0,
+2/21/2024 15:35:01,Male,19,SecondYear,AIML,5 to 7,8,4 to 5,9,10,4k-6k,1 hour,Often,Never,20:00-21:00,0,
+2/21/2024 15:37:26,Male,20,FirstYear,AIML,5 to 7,7,1 to 3,8,6,6k-8k,3 hours,Rarely,Sometimes,20:00-21:00,1,
+2/21/2024 15:56:44,Female,22,BTech,Mech,7 to 9,8,1 to 3,7,7,4k-6k,3 hours,Sometimes,Sometimes,20:00-21:00,1,
+2/21/2024 16:03:09,Male,19,SecondYear,IT,7 to 9,8,1 to 3,8,2,0-2k,2 hours,Rarely,Sometimes,20:00-21:00,0,No
+2/21/2024 16:26:33,Male,21,SecondYear,Comp,5 to 7,7,0,9,10,6k-8k,2 hours,Rarely,Sometimes,21:00-22:00,0,
+2/21/2024 16:37:51,Male,21,ThirdYear,AIML,5 to 7,8,0,8,7,2k-4k,1 hour,Never,Often,20:00-21:00,0,
+2/21/2024 16:48:20,Female,20,SecondYear,Comp,7 to 9,9,1 to 3,9,10,6k-8k,1 hour,Sometimes,Rarely,20:00-21:00,0,
+2/21/2024 16:54:31,Male,21,ThirdYear,Comp,0 to 5,3,6 to 7,3,7,4k-6k,4 hours,Often,Never,19:00-20:00,0,
+2/21/2024 17:14:06,Male,20,FirstYear,Comp,5 to 7,7,0,8,5,Grt than 10k,4 hours,Rarely,Often,19:00-20:00,2,
+2/21/2024 17:39:44,Male,20,FirstYear,Mech,0 to 5,4,6 to 7,7,5,Grt than 10k,3 hours,Often,Sometimes,21:00-22:00,0,Nigga nigga nigga nigga nigga . Ohmygot. Amogus . 
+2/21/2024 17:55:13,Male,20,SecondYear,AIML,5 to 7,5,0,6,10,4k-6k,2 hours,Rarely,Sometimes,19:00-20:00,1,
+2/21/2024 18:02:01,Male,20,ThirdYear,AIML,7 to 9,8,4 to 5,1,7,4k-6k,4 hours,Sometimes,Rarely,20:00-21:00,0,Add one more question - How much are you satisfied with your sleep cycle?
+2/21/2024 18:20:19,Male,20,ThirdYear,IT,7 to 9,3,1 to 3,8,10,0-2k,5 hours,Often,Often,22:00-23:00,2,Good
+2/21/2024 18:20:36,Male,19,SecondYear,AIML,5 to 7,4,1 to 3,2,4,0-2k,1 hour,Sometimes,Often,22:00-23:00,2,
+2/21/2024 18:27:49,Female,20,SecondYear,IT,5 to 7,5,1 to 3,2,10,4k-6k,2 hours,Often,Never,19:00-20:00,0,
+2/21/2024 18:32:06,Male,20,SecondYear,IT,7 to 9,7,1 to 3,5,10,4k-6k,2 hours,Sometimes,Often,19:00-20:00,1,"Hmmm, Nice"
+2/21/2024 18:50:08,Male,19,SecondYear,IT,7 to 9,9,0,8,10,8k-10k,1 hour,Rarely,Sometimes,20:00-21:00,0,Good
+2/21/2024 18:50:13,Male,22,ThirdYear,Mech,5 to 7,8,4 to 5,4,7,2k-4k,2 hours,Often,Often,22:00-23:00,0,Great 
+2/21/2024 19:09:10,Male,19,SecondYear,IT,5 to 7,7,1 to 3,8,4,6k-8k,5 hours,Rarely,Always,21:00-22:00,1,
+2/21/2024 19:11:02,Male,18,FirstYear,AIML,5 to 7,8,1 to 3,9,8,4k-6k,1 hour,Rarely,Rarely,21:00-22:00,0,
+2/21/2024 19:24:51,Male,20,ThirdYear,Comp,7 to 9,10,6 to 7,5,10,0-2k,5 hours,Always,Never,20:00-21:00,1,
+2/21/2024 19:42:32,Male,21,ThirdYear,ChemIC,7 to 9,5,0,4,10,2k-4k,5 hours,Often,Often,21:00-22:00,2,
+2/21/2024 19:44:31,Male,21,SecondYear,ChemIC,5 to 7,5,1 to 3,1,10,Grt than 10k,2 hours,Sometimes,Sometimes,19:00-20:00,1,"Bring some change in the college timings meaning, try to keep at 10 am till 3pm."
+2/21/2024 19:59:30,Male,21,ThirdYear,ET,5 to 7,4,4 to 5,3,8,8k-10k,1 hour,Sometimes,Often,21:00-22:00,1,Would love to hear about the insights that you get from this survey
+2/21/2024 20:22:27,Male,20,ThirdYear,ET,0 to 5,2,1 to 3,4,10,4k-6k,3 hours,Often,Often,20:00-21:00,3,"Sleep schedule is an important factor in the life of normal students and is very prominent in the degrees liek engineering, medical, architecture and so on. Recently, I've had a rough patch of days where I am just trying to make up for my sleep here and there, but it is not working for me. It is great that you guys are seriously looking into this matter, wish you all the best with your project. Do let us know about your findings and insights, either personally or via an email :)"
+2/21/2024 20:34:42,Male,18,FirstYear,AIML,9,10,6 to 7,10,4,2k-4k,5 hours,Never,Often,22:00-23:00,1,
+2/21/2024 21:02:03,Male,21,BTech,Mech,5 to 7,7,6 to 7,7,6,8k-10k,4 hours,Rarely,Sometimes,20:00-21:00,1,
+2/21/2024 21:11:39,Male,20,SecondYear,ET,7 to 9,10,1 to 3,5,5,Grt than 10k,5 hours,Sometimes,Rarely,20:00-21:00,0,Please Don't Share with anyone I am filling this form for your project. Thank You! 😊
+2/21/2024 21:26:32,Male,21,BTech,Mech,7 to 9,7,1 to 3,6,4,6k-8k,4 hours,Rarely,Often,20:00-21:00,0,
+2/21/2024 21:27:04,Male,18,FirstYear,IT,5 to 7,8,0,6,5,4k-6k,1 hour,Rarely,Often,19:00-20:00,0,
+2/21/2024 21:39:11,Male,19,FirstYear,Mech,7 to 9,8,1 to 3,7,2,6k-8k,1 hour,Never,Sometimes,19:00-20:00,0,"Expecting one to know, how many steps one walks in a day is unreasonable. Anyway, I understand that it is required as part of data analysis so :)"
+2/21/2024 21:45:02,Female,19,SecondYear,AIML,5 to 7,4,4 to 5,4,9,6k-8k,1 hour,Always,Always,20:00-21:00,3,
+2/21/2024 21:45:29,Female,19,FirstYear,ET,5 to 7,3,1 to 3,9,10,2k-4k,1 hour,Rarely,Never,20:00-21:00,0,Nothing 
+2/21/2024 22:18:39,Female,18,FirstYear,IT,5 to 7,7,1 to 3,4,8,4k-6k,3 hours,Sometimes,Rarely,20:00-21:00,1,It was convenient and esay
+2/21/2024 22:20:12,Male,19,SecondYear,IT,5 to 7,9,1 to 3,9,9,2k-4k,3 hours,Rarely,Never,22:00-23:00,0,
+2/21/2024 22:45:04,Male,20,FirstYear,Mech,7 to 9,9,4 to 5,10,5,0-2k,5 hours,Sometimes,Sometimes,21:00-22:00,0,Everyone needs money 
+2/22/2024 0:05:34,Male,20,FirstYear,AIML,5 to 7,8,4 to 5,5,7,4k-6k,3 hours,Sometimes,Always,19:00-20:00,0,
+2/22/2024 0:35:35,Male,20,ThirdYear,Comp,7 to 9,9,0,7,8,2k-4k,3 hours,Sometimes,Often,20:00-21:00,0,
+2/22/2024 1:11:56,Male,19,FirstYear,AIML,7 to 9,8,0,9,3,Grt than 10k,1 hour,Never,Often,20:00-21:00,0,
+2/22/2024 1:29:38,Female,20,ThirdYear,AIML,5 to 7,8,6 to 7,8,5,6k-8k,1 hour,Rarely,Sometimes,20:00-21:00,0,
+2/22/2024 1:45:59,Male,19,FirstYear,Comp,7 to 9,3,1 to 3,8,7,6k-8k,1 hour,Sometimes,Always,21:00-22:00,0,Nice survey
+2/22/2024 1:50:49,Male,19,FirstYear,AIML,7 to 9,7,1 to 3,7,6,4k-6k,5 hours,Never,Always,20:00-21:00,0,Pls share the data looks fairly interesting also maybe should have also having grades / marks as input would've been more insightful
+2/22/2024 2:42:11,Male,21,SecondYear,IT,5 to 7,5,4 to 5,2,8,2k-4k,5 hours,Rarely,Never,20:00-21:00,1,
+2/22/2024 7:56:02,Male,18,FirstYear,Mech,7 to 9,8,1 to 3,9,3,4k-6k,1 hour,Sometimes,Rarely,20:00-21:00,0,
+2/22/2024 8:02:06,Male,20,ThirdYear,ChemIC,7 to 9,9,1 to 3,7,4,6k-8k,1 hour,Rarely,Often,20:00-21:00,0,
+2/22/2024 8:19:42,Female,19,FirstYear,IT,5 to 7,8,0,6,9,0-2k,5 hours,Often,Often,21:00-22:00,0,
+2/22/2024 8:50:55,Male,20,SecondYear,ET,5 to 7,10,0,10,4,8k-10k,5 hours,Rarely,Never,21:00-22:00,0,Excellent 👌🏻
+2/22/2024 9:32:56,Female,20,ThirdYear,Mech,7 to 9,8,1 to 3,8,8,Grt than 10k,2 hours,Rarely,Never,21:00-22:00,0,
+2/22/2024 10:01:30,Female,19,SecondYear,Comp,5 to 7,7,0,5,5,2k-4k,4 hours,Sometimes,Always,21:00-22:00,0,
+2/22/2024 10:35:28,Male,20,ThirdYear,Mech,5 to 7,7,1 to 3,10,8,0-2k,1 hour,Often,Often,20:00-21:00,0,
+2/22/2024 11:02:51,Male,19,SecondYear,Comp,7 to 9,8,0,7,4,4k-6k,1 hour,Rarely,Never,20:00-21:00,0,-
+2/22/2024 11:29:07,Male,21,ThirdYear,Comp,5 to 7,6,0,7,8,4k-6k,3 hours,Rarely,Often,21:00-22:00,0,Keep doing..!! 
+2/22/2024 11:35:56,Male,19,ThirdYear,AIML,7 to 9,10,1 to 3,7,3,4k-6k,1 hour,Often,Rarely,21:00-22:00,0,
+2/22/2024 12:47:57,Male,19,SecondYear,AIML,5 to 7,9,6 to 7,7,5,0-2k,1 hour,Rarely,Sometimes,21:00-22:00,0,
+2/22/2024 14:04:34,Male,19,FirstYear,Mech,0 to 5,6,4 to 5,3,5,4k-6k,2 hours,Sometimes,Always,23:00+,0,It's good i guess 
+2/22/2024 14:08:17,Male,22,BTech,Mech,5 to 7,7,1 to 3,8,8,2k-4k,5 hours,Sometimes,Always,20:00-21:00,0,
+2/22/2024 15:53:26,Female,20,ThirdYear,ET,0 to 5,7,4 to 5,4,9,4k-6k,3 hours,Often,Often,20:00-21:00,0,
+2/22/2024 16:09:59,Female,19,SecondYear,AIML,5 to 7,8,0,4,6,4k-6k,1 hour,Sometimes,Sometimes,20:00-21:00,0,
+2/22/2024 17:25:09,Male,23,BTech,Mech,5 to 7,9,1 to 3,9,9,2k-4k,1 hour,Rarely,Rarely,22:00-23:00,0,
+2/22/2024 18:32:19,Male,20,ThirdYear,ET,5 to 7,6,1 to 3,6,5,6k-8k,1 hour,Rarely,Sometimes,22:00-23:00,2,
+2/22/2024 18:42:03,Male,19,SecondYear,IT,5 to 7,7,1 to 3,7,6,4k-6k,2 hours,Rarely,Often,21:00-22:00,0,Good
+2/22/2024 20:43:04,Male,19,SecondYear,IT,7 to 9,7,1 to 3,5,6,6k-8k,1 hour,Rarely,Rarely,19:00-20:00,0,Would love to see the end results.
+2/22/2024 20:45:30,Female,19,SecondYear,AIML,5 to 7,7,0,10,8,8k-10k,1 hour,Sometimes,Rarely,20:00-21:00,0,
+2/22/2024 20:47:31,Male,20,SecondYear,Mech,7 to 9,9,1 to 3,5,2,6k-8k,5 hours,Never,Always,20:00-21:00,0,
+2/22/2024 20:48:08,Male,19,SecondYear,ET,5 to 7,7,6 to 7,9,10,8k-10k,2 hours,Sometimes,Sometimes,20:00-21:00,0,
+2/22/2024 21:03:00,Male,20,SecondYear,ET,0 to 5,1,0,8,10,6k-8k,1 hour,Often,Rarely,20:00-21:00,6,
+2/22/2024 21:03:25,Male,19,SecondYear,Mech,7 to 9,7,0,9,5,0-2k,1 hour,Rarely,Always,20:00-21:00,0,
+2/22/2024 21:55:16,Female,20,SecondYear,Comp,5 to 7,8,6 to 7,2,9,2k-4k,2 hours,Rarely,Always,20:00-21:00,1,
+2/22/2024 22:28:34,Male,19,FirstYear,Mech,5 to 7,8,1 to 3,7,3,8k-10k,4 hours,Rarely,Sometimes,21:00-22:00,0,
+2/22/2024 23:04:08,Male,20,SecondYear,ET,5 to 7,8,0,6,8,4k-6k,3 hours,Never,Rarely,20:00-21:00,0,Sneha forced me to do so👀
+2/22/2024 23:05:46,Female,19,SecondYear,AIML,5 to 7,8,1 to 3,8,10,6k-8k,2 hours,Often,Always,20:00-21:00,0,
+2/22/2024 23:12:35,Male,19,SecondYear,ET,5 to 7,5,0,5,9,2k-4k,2 hours,Sometimes,Always,21:00-22:00,1,Very nice and helped me evaluate myself
+2/22/2024 23:13:14,Female,19,SecondYear,AIML,5 to 7,8,1 to 3,5,9,2k-4k,2 hours,Sometimes,Often,21:00-22:00,0,
+2/22/2024 23:17:53,Female,19,SecondYear,AIML,5 to 7,8,0,3,4,6k-8k,1 hour,Never,Sometimes,23:00+,0,
+2/22/2024 23:23:22,Male,19,SecondYear,AIML,5 to 7,8,0,7,5,6k-8k,1 hour,Never,Rarely,20:00-21:00,0,
+2/22/2024 23:24:26,Male,19,SecondYear,Comp,5 to 7,8,0,8,6,8k-10k,1 hour,Rarely,Rarely,21:00-22:00,0,
+2/22/2024 23:35:18,Female,19,SecondYear,AIML,5 to 7,6,4 to 5,3,7,6k-8k,1 hour,Rarely,Always,20:00-21:00,0,
+2/22/2024 23:40:16,Male,19,SecondYear,ChemIC,5 to 7,6,1 to 3,5,7,0-2k,3 hours,Sometimes,Always,20:00-21:00,1,
+2/22/2024 23:55:56,Male,19,SecondYear,ChemIC,5 to 7,8,1 to 3,7,5,4k-6k,3 hours,Sometimes,Often,21:00-22:00,1,Very good work
+2/23/2024 0:02:18,Male,19,SecondYear,IT,0 to 5,3,4 to 5,6,8,2k-4k,5 hours,Often,Often,21:00-22:00,1,
+2/23/2024 0:08:23,Male,22,SecondYear,AIML,9,1,6 to 7,1,10,0-2k,5 hours,Never,Always,21:00-22:00,5,bhai neend aa rahe sone do
+2/23/2024 0:13:03,Male,19,SecondYear,AIML,7 to 9,8,1 to 3,9,3,6k-8k,1 hour,Rarely,Sometimes,20:00-21:00,1,
+2/23/2024 0:36:16,Male,20,FirstYear,IT,5 to 7,2,0,4,3,4k-6k,4 hours,Never,Rarely,21:00-22:00,4,Awesome 
+2/23/2024 0:36:49,Male,23,SecondYear,ET,5 to 7,3,1 to 3,6,3,2k-4k,3 hours,Rarely,Rarely,20:00-21:00,5,Good
+2/23/2024 0:37:26,Male,18,SecondYear,AIML,5 to 7,2,4 to 5,3,6,2k-4k,1 hour,Rarely,Never,21:00-22:00,5,Nice
+2/23/2024 0:38:10,Male,20,ThirdYear,ChemIC,7 to 9,2,1 to 3,5,5,Grt than 10k,3 hours,Rarely,Rarely,22:00-23:00,6,👍✌️
+2/23/2024 0:49:45,Female,20,SecondYear,Mech,7 to 9,6,1 to 3,7,8,6k-8k,3 hours,Never,Always,20:00-21:00,0,
+2/23/2024 1:23:06,Female,20,SecondYear,AIML,5 to 7,8,0,8,5,0-2k,1 hour,Always,Rarely,20:00-21:00,0,.
+2/23/2024 1:24:41,Male,20,SecondYear,Mech,5 to 7,8,1 to 3,7,7,Grt than 10k,5 hours,Rarely,Often,21:00-22:00,2,
+2/23/2024 6:42:50,Male,18,SecondYear,AIML,5 to 7,9,0,7,6,6k-8k,1 hour,Rarely,Sometimes,20:00-21:00,0,NA
+2/23/2024 7:53:46,Female,19,SecondYear,ET,5 to 7,7,1 to 3,8,8,8k-10k,2 hours,Sometimes,Sometimes,20:00-21:00,0,
+2/23/2024 10:07:59,Male,21,SecondYear,IT,5 to 7,7,0,4,6,2k-4k,3 hours,Never,Rarely,21:00-22:00,0,Good
+2/23/2024 11:13:36,Male,19,SecondYear,IT,5 to 7,7,4 to 5,5,6,8k-10k,3 hours,Often,Always,20:00-21:00,3,
+2/23/2024 11:57:06,Male,19,SecondYear,AIML,5 to 7,7,0,3,4,2k-4k,4 hours,Sometimes,Sometimes,21:00-22:00,1,
+2/23/2024 15:50:30,Male,20,ThirdYear,ET,5 to 7,7,0,8,3,0-2k,2 hours,Rarely,Sometimes,20:00-21:00,0,
+2/23/2024 16:26:11,Male,22,ThirdYear,AIML,9,1,0,10,1,0-2k,1 hour,Never,Always,19:00-20:00,7,
+2/23/2024 18:20:00,Male,17,FirstYear,IT,7 to 9,8,1 to 3,4,6,Grt than 10k,3 hours,Rarely,Often,21:00-22:00,0,.
+2/23/2024 20:09:22,Female,19,FirstYear,IT,7 to 9,7,4 to 5,3,5,6k-8k,5 hours,Always,Rarely,20:00-21:00,0,
+2/24/2024 4:12:57,Male,19,FirstYear,Comp,0 to 5,1,6 to 7,8,5,Grt than 10k,5 hours,Rarely,Always,21:00-22:00,0,
+2/24/2024 8:42:31,Male,18,FirstYear,ET,5 to 7,6,4 to 5,4,4,4k-6k,1 hour,Rarely,Never,20:00-21:00,0,
+2/24/2024 10:52:46,Male,19,FirstYear,Comp,5 to 7,7,1 to 3,3,2,Grt than 10k,5 hours,Rarely,Often,20:00-21:00,0,
+2/24/2024 12:42:34,Male,20,SecondYear,AIML,5 to 7,9,1 to 3,9,3,4k-6k,2 hours,Rarely,Often,20:00-21:00,0,
+2/24/2024 16:44:19,Male,19,SecondYear,Comp,7 to 9,4,0,7,7,0-2k,2 hours,Never,Never,20:00-21:00,0,i think covered all points.
+2/24/2024 22:13:12,Male,19,FirstYear,AIML,7 to 9,9,1 to 3,10,1,Grt than 10k,3 hours,Rarely,Always,22:00-23:00,0,...
+2/24/2024 22:33:14,Female,19,FirstYear,Comp,0 to 5,5,1 to 3,6,8,6k-8k,1 hour,Sometimes,Often,21:00-22:00,0,
+2/24/2024 22:33:33,Male,18,FirstYear,ET,0 to 5,3,1 to 3,6,5,6k-8k,2 hours,Never,Often,21:00-22:00,1,
+2/24/2024 22:33:58,Male,18,FirstYear,AIML,7 to 9,7,6 to 7,6,4,4k-6k,2 hours,Sometimes,Often,20:00-21:00,1,
+2/24/2024 22:34:11,Male,20,SecondYear,ChemIC,7 to 9,8,0,8,1,Grt than 10k,2 hours,Rarely,Always,19:00-20:00,0,
+2/24/2024 22:34:49,Female,20,ThirdYear,Mech,9,10,6 to 7,10,5,Grt than 10k,2 hours,Rarely,Often,22:00-23:00,1,Where this will be used and why
+2/24/2024 22:35:08,Male,20,SecondYear,Mech,7 to 9,8,0,8,2,4k-6k,2 hours,Never,Rarely,19:00-20:00,0, 
+2/24/2024 22:35:09,Male,20,ThirdYear,ET,0 to 5,7,1 to 3,10,7,4k-6k,4 hours,Sometimes,Sometimes,20:00-21:00,2,
+2/24/2024 22:35:24,Male,21,ThirdYear,AIML,7 to 9,9,4 to 5,8,2,2k-4k,3 hours,Rarely,Sometimes,20:00-21:00,0,
+2/24/2024 22:35:48,Male,20,SecondYear,Comp,5 to 7,7,1 to 3,1,5,6k-8k,3 hours,Rarely,Rarely,19:00-20:00,0,--
+2/24/2024 22:35:53,Male,19,SecondYear,ChemIC,7 to 9,9,4 to 5,5,4,6k-8k,1 hour,Rarely,Rarely,21:00-22:00,0,
+2/24/2024 22:36:01,Male,20,ThirdYear,IT,5 to 7,7,1 to 3,7,7,2k-4k,1 hour,Rarely,Never,21:00-22:00,0,Noice 👌 and don't forget to share your result/final analysis) outcome of this survey 
+2/24/2024 22:36:12,Male,19,FirstYear,Comp,7 to 9,3,6 to 7,3,5,4k-6k,5 hours,Sometimes,Always,20:00-21:00,2,"Nice work, Very important issue to address."
+2/24/2024 22:36:17,Male,20,SecondYear,AIML,7 to 9,4,0,2,3,4k-6k,2 hours,Sometimes,Sometimes,21:00-22:00,0,Good
+2/24/2024 22:36:36,Male,19,SecondYear,IT,7 to 9,7,4 to 5,4,5,2k-4k,2 hours,Sometimes,Often,20:00-21:00,0,
+2/24/2024 22:37:30,Male,20,SecondYear,Comp,0 to 5,5,1 to 3,8,9,6k-8k,1 hour,Sometimes,Rarely,20:00-21:00,0,
+2/24/2024 22:38:35,Female,18,FirstYear,AIML,7 to 9,9,1 to 3,7,4,6k-8k,4 hours,Sometimes,Always,21:00-22:00,1,
+2/24/2024 22:38:35,Female,19,FirstYear,AIML,7 to 9,9,6 to 7,3,5,4k-6k,1 hour,Rarely,Sometimes,20:00-21:00,0,
+2/24/2024 22:38:48,Male,19,FirstYear,AIML,9,10,0,7,10,Grt than 10k,5 hours,Often,Always,21:00-22:00,0,
+2/24/2024 22:39:09,Male,19,SecondYear,Mech,7 to 9,6,1 to 3,4,7,4k-6k,1 hour,Rarely,Sometimes,20:00-21:00,1,
+2/24/2024 22:39:28,Male,19,FirstYear,AIML,5 to 7,7,0,8,9,2k-4k,2 hours,Often,Often,20:00-21:00,1,☠️
+2/24/2024 22:40:28,Female,19,FirstYear,AIML,5 to 7,8,1 to 3,8,8,0-2k,1 hour,Sometimes,Rarely,20:00-21:00,0,Useful Survey
+2/24/2024 22:40:44,Male,19,SecondYear,ET,5 to 7,8,1 to 3,9,6,4k-6k,2 hours,Sometimes,Sometimes,21:00-22:00,0,
+2/24/2024 22:41:01,Male,19,FirstYear,AIML,5 to 7,8,1 to 3,7,8,8k-10k,5 hours,Rarely,Often,19:00-20:00,1,
+2/24/2024 22:41:16,Female,19,FirstYear,IT,5 to 7,3,0,4,10,6k-8k,1 hour,Often,Often,21:00-22:00,5,
+2/24/2024 22:41:40,Male,19,SecondYear,Mech,0 to 5,6,6 to 7,6,8,8k-10k,1 hour,Often,Always,23:00+,2,
+2/24/2024 22:43:52,Male,20,ThirdYear,ET,5 to 7,7,1 to 3,4,5,6k-8k,4 hours,Sometimes,Sometimes,20:00-21:00,1,
+2/24/2024 22:44:29,Male,19,SecondYear,IT,5 to 7,9,1 to 3,4,8,6k-8k,5 hours,Sometimes,Often,20:00-21:00,1,No
+2/24/2024 22:44:30,Male,20,ThirdYear,ChemIC,5 to 7,7,0,5,9,4k-6k,2 hours,Rarely,Often,20:00-21:00,0,No Feedback just make a good project using this data 🙂
+2/24/2024 22:44:58,Male,21,BTech,AIML,7 to 9,6,4 to 5,6,8,6k-8k,5 hours,Rarely,Often,19:00-20:00,0,
+2/24/2024 22:46:03,Female,18,FirstYear,AIML,5 to 7,5,0,10,7,6k-8k,3 hours,Rarely,Never,20:00-21:00,0,
+2/24/2024 22:47:00,Male,20,SecondYear,AIML,5 to 7,5,4 to 5,4,9,6k-8k,2 hours,Sometimes,Always,21:00-22:00,0,
+2/24/2024 22:47:14,Male,19,FirstYear,IT,9,9,0,2,7,2k-4k,3 hours,Sometimes,Rarely,20:00-21:00,0,
+2/24/2024 22:47:43,Male,19,SecondYear,ET,5 to 7,7,1 to 3,7,10,4k-6k,1 hour,Sometimes,Always,20:00-21:00,1,
+2/24/2024 22:47:46,Male,24,FirstYear,ET,0 to 5,1,0,1,1,0-2k,1 hour,Always,Always,19:00-20:00,0,There’s only two genders 
+2/24/2024 22:49:18,Male,19,FirstYear,AIML,5 to 7,9,1 to 3,10,8,2k-4k,4 hours,Rarely,Rarely,21:00-22:00,1,
+2/24/2024 22:50:03,Male,20,FirstYear,Mech,5 to 7,3,0,6,4,6k-8k,1 hour,Never,Always,21:00-22:00,1,Gg 
+2/24/2024 22:51:20,Male,23,FirstYear,AIML,0 to 5,3,4 to 5,3,3,Grt than 10k,5 hours,Never,Rarely,22:00-23:00,7,"I think among us is the greatest ever game , also I identify as a nigger "
+2/24/2024 22:52:04,Male,21,ThirdYear,Mech,7 to 9,9,1 to 3,5,9,2k-4k,3 hours,Rarely,Always,20:00-21:00,0,Yes it's ok
+2/24/2024 22:52:45,Male,20,ThirdYear,Mech,5 to 7,10,4 to 5,1,5,0-2k,5 hours,Sometimes,Rarely,21:00-22:00,0,
+2/24/2024 22:52:47,Male,20,SecondYear,IT,0 to 5,10,1 to 3,3,3,8k-10k,1 hour,Rarely,Often,21:00-22:00,1,Nice nice 
+2/24/2024 22:53:08,Male,21,ThirdYear,ET,7 to 9,7,1 to 3,6,5,Grt than 10k,2 hours,Sometimes,Sometimes,20:00-21:00,0,
+2/24/2024 22:55:10,Male,21,ThirdYear,Mech,7 to 9,8,1 to 3,3,8,2k-4k,3 hours,Sometimes,Rarely,20:00-21:00,0,
+2/24/2024 22:55:29,Male,21,ThirdYear,AIML,7 to 9,9,1 to 3,6,3,2k-4k,3 hours,Sometimes,Often,20:00-21:00,0,
+2/24/2024 22:59:15,Male,20,ThirdYear,ChemIC,7 to 9,9,4 to 5,2,9,0-2k,1 hour,Often,Often,20:00-21:00,0,
+2/24/2024 22:59:28,Male,20,FirstYear,ET,5 to 7,4,0,3,9,2k-4k,5 hours,Sometimes,Often,22:00-23:00,1,
+2/24/2024 23:00:44,Female,20,SecondYear,Comp,0 to 5,1,0,6,3,2k-4k,1 hour,Sometimes,Always,22:00-23:00,1,
+2/24/2024 23:02:19,Male,21,BTech,Mech,5 to 7,6,6 to 7,3,6,0-2k,5 hours,Often,Often,20:00-21:00,0,
+2/24/2024 23:05:52,Female,18,FirstYear,Comp,7 to 9,9,1 to 3,5,8,2k-4k,1 hour,Often,Rarely,20:00-21:00,0,
+2/24/2024 23:08:29,Female,20,SecondYear,AIML,7 to 9,7,1 to 3,3,5,0-2k,1 hour,Rarely,Always,20:00-21:00,0,
+2/24/2024 23:09:33,Male,20,ThirdYear,Mech,7 to 9,8,0,6,8,Grt than 10k,4 hours,Often,Always,21:00-22:00,1,
+2/24/2024 23:12:41,Male,19,SecondYear,ET,5 to 7,6,1 to 3,4,7,2k-4k,1 hour,Sometimes,Rarely,20:00-21:00,1,Nice survey
+2/24/2024 23:13:35,Male,20,SecondYear,AIML,5 to 7,8,0,6,4,4k-6k,3 hours,Never,Rarely,20:00-21:00,0,
+2/24/2024 23:15:32,Male,19,ThirdYear,ChemIC,7 to 9,3,1 to 3,5,10,6k-8k,4 hours,Often,Often,20:00-21:00,0,
+2/24/2024 23:16:33,Male,18,FirstYear,IT,5 to 7,8,1 to 3,10,3,Grt than 10k,1 hour,Rarely,Sometimes,20:00-21:00,0,
+2/24/2024 23:16:57,Female,18,FirstYear,IT,5 to 7,3,1 to 3,7,9,4k-6k,2 hours,Often,Always,21:00-22:00,1,Good
+2/24/2024 23:18:42,Male,19,SecondYear,Comp,7 to 9,10,1 to 3,7,3,4k-6k,1 hour,Rarely,Sometimes,20:00-21:00,0,
+2/24/2024 23:22:36,Female,18,FirstYear,AIML,7 to 9,9,1 to 3,2,3,2k-4k,2 hours,Rarely,Never,20:00-21:00,0,
+2/24/2024 23:31:17,Male,19,SecondYear,Comp,5 to 7,10,0,5,2,6k-8k,1 hour,Rarely,Often,20:00-21:00,0,You should make changes in options of the question of using electronics devices before sleep. There must be an option of 0-30 minutes. Another one is about sleep timing hours options.
+2/24/2024 23:32:57,Male,18,FirstYear,ET,0 to 5,1,4 to 5,2,10,Grt than 10k,3 hours,Always,Always,20:00-21:00,4,Very much needed(RELATABLE!!!)
+2/24/2024 23:38:55,Male,19,SecondYear,AIML,5 to 7,7,1 to 3,8,7,6k-8k,4 hours,Rarely,Always,21:00-22:00,4,
+2/25/2024 0:28:11,Male,19,SecondYear,AIML,5 to 7,8,1 to 3,8,3,2k-4k,1 hour,Rarely,Rarely,21:00-22:00,0,
+2/25/2024 0:30:48,Female,22,BTech,Mech,5 to 7,7,4 to 5,1,5,0-2k,2 hours,Rarely,Never,23:00+,0,"Because this project going to predict insomnia, ask people when they go to sleep. Now a days being awake till 2am while browsing online is norm and that causes more lack of sleep late at night. "
+2/25/2024 0:32:05,Male,19,SecondYear,Comp,7 to 9,10,0,6,8,0-2k,5 hours,Sometimes,Always,20:00-21:00,1,
+2/25/2024 0:36:58,Male,18,FirstYear,AIML,7 to 9,8,4 to 5,8,8,8k-10k,1 hour,Rarely,Sometimes,19:00-20:00,1,
+2/25/2024 0:37:11,Male,21,ThirdYear,ET,5 to 7,8,1 to 3,7,9,6k-8k,4 hours,Rarely,Rarely,20:00-21:00,0,Good 👍 
+2/25/2024 0:40:10,Male,20,ThirdYear,AIML,7 to 9,9,4 to 5,8,2,4k-6k,1 hour,Rarely,Never,19:00-20:00,0,Good way to develop model for detecting sleep time for students as many students have stress nowadays and sacrifice on their sleep time. Thank you for the initiative.
+2/25/2024 0:44:04,Male,18,FirstYear,IT,0 to 5,5,0,3,10,6k-8k,5 hours,Sometimes,Often,19:00-20:00,1,
+2/25/2024 0:54:51,Male,19,SecondYear,AIML,5 to 7,3,1 to 3,7,6,6k-8k,4 hours,Sometimes,Rarely,20:00-21:00,2,
+2/25/2024 0:56:07,Male,18,FirstYear,AIML,7 to 9,8,1 to 3,8,1,0-2k,5 hours,Sometimes,Always,20:00-21:00,6,Sleeping late 😁😁
+2/25/2024 1:37:23,Male,20,ThirdYear,Mech,5 to 7,7,4 to 5,7,7,4k-6k,3 hours,Sometimes,Always,20:00-21:00,0,
+2/25/2024 1:43:35,Male,20,SecondYear,Comp,7 to 9,9,1 to 3,5,5,4k-6k,5 hours,Sometimes,Always,20:00-21:00,0,
+2/25/2024 2:16:09,Female,21,ThirdYear,Mech,9,7,6 to 7,3,10,4k-6k,2 hours,Often,Rarely,21:00-22:00,0,Good
+2/25/2024 2:49:07,Male,21,ThirdYear,Mech,7 to 9,9,4 to 5,5,5,2k-4k,3 hours,Never,Rarely,21:00-22:00,0,
+2/25/2024 3:01:41,Female,19,SecondYear,AIML,5 to 7,8,1 to 3,7,7,6k-8k,3 hours,Sometimes,Often,21:00-22:00,0,
+2/25/2024 4:32:44,Male,19,SecondYear,ChemIC,7 to 9,7,1 to 3,6,8,6k-8k,1 hour,Sometimes,Never,20:00-21:00,0,
+2/25/2024 7:18:23,Male,20,ThirdYear,Mech,5 to 7,8,0,10,4,4k-6k,5 hours,Sometimes,Never,21:00-22:00,0,
+2/25/2024 7:28:57,Male,20,ThirdYear,Mech,5 to 7,8,4 to 5,7,7,4k-6k,1 hour,Sometimes,Never,20:00-21:00,1,
+2/25/2024 7:30:26,Male,20,ThirdYear,ChemIC,5 to 7,7,1 to 3,8,2,2k-4k,2 hours,Rarely,Rarely,20:00-21:00,2,Good Survey
+2/25/2024 7:43:14,Male,21,ThirdYear,ET,5 to 7,8,1 to 3,9,2,Grt than 10k,1 hour,Never,Rarely,21:00-22:00,0,"Good Job .Still consider including the time to know the actually cycle . Cause I think the more we alligned to the natural body clock the quality of sleep and also health gets better drastically . Time to sleep and rise can be an important feature to consider , though can increase complexity of your project . "
+2/25/2024 8:58:17,Male,21,ThirdYear,ET,5 to 7,4,1 to 3,1,10,4k-6k,5 hours,Always,Often,20:00-21:00,3,Best of luck for your project one of data science enthusiast 
+2/25/2024 9:21:18,Female,18,FirstYear,Comp,7 to 9,9,1 to 3,1,7,8k-10k,1 hour,Sometimes,Rarely,19:00-20:00,0,
+2/25/2024 9:22:07,Male,21,BTech,Mech,7 to 9,8,0,7,7,6k-8k,1 hour,Rarely,Never,21:00-22:00,0,
+2/25/2024 9:34:19,Female,20,ThirdYear,Mech,5 to 7,5,4 to 5,2,8,4k-6k,3 hours,Sometimes,Always,22:00-23:00,2,
+2/25/2024 9:39:01,Female,18,SecondYear,Comp,5 to 7,4,0,1,9,0-2k,5 hours,Often,Sometimes,20:00-21:00,0,
+2/25/2024 9:40:44,Male,20,SecondYear,Comp,7 to 9,7,1 to 3,10,4,4k-6k,1 hour,Rarely,Sometimes,21:00-22:00,2,
+2/25/2024 9:51:37,Male,20,ThirdYear,AIML,7 to 9,7,1 to 3,10,3,2k-4k,2 hours,Rarely,Sometimes,20:00-21:00,1,
+2/25/2024 9:53:58,Male,21,ThirdYear,ET,5 to 7,9,0,7,3,4k-6k,3 hours,Sometimes,Often,19:00-20:00,0,
+2/25/2024 10:06:34,Male,21,BTech,Mech,7 to 9,8,1 to 3,9,4,4k-6k,2 hours,Rarely,Rarely,21:00-22:00,0,
+2/25/2024 10:17:27,Male,18,FirstYear,AIML,5 to 7,8,1 to 3,7,8,8k-10k,4 hours,Never,Often,20:00-21:00,0,
+2/25/2024 10:33:13,Male,20,ThirdYear,ET,7 to 9,8,1 to 3,5,7,4k-6k,2 hours,Rarely,Rarely,21:00-22:00,0,The survey contains good amount of questions to judge a person's sleep cycle. 
+2/25/2024 10:34:18,Male,20,SecondYear,IT,5 to 7,6,1 to 3,7,3,6k-8k,4 hours,Rarely,Never,20:00-21:00,0,
+2/25/2024 11:09:44,Male,21,ThirdYear,ET,5 to 7,5,6 to 7,5,10,4k-6k,1 hour,Sometimes,Always,20:00-21:00,0,NA
+2/25/2024 11:12:01,Male,19,SecondYear,ET,7 to 9,8,0,6,3,4k-6k,1 hour,Rarely,Rarely,20:00-21:00,0,
+2/25/2024 11:22:51,Male,18,FirstYear,ChemIC,7 to 9,10,1 to 3,6,1,Grt than 10k,1 hour,Never,Often,20:00-21:00,0,👍🏼
+2/25/2024 11:30:50,Male,22,FirstYear,Comp,9,3,1 to 3,1,9,0-2k,5 hours,Often,Always,21:00-22:00,2,Good question!!! Cover each question
+2/25/2024 11:37:37,Male,19,SecondYear,ET,5 to 7,6,1 to 3,8,9,4k-6k,5 hours,Never,Always,20:00-21:00,1,.
+2/25/2024 11:42:33,Male,19,SecondYear,AIML,5 to 7,10,4 to 5,8,9,4k-6k,1 hour,Often,Never,20:00-21:00,0,
+2/25/2024 12:05:33,Female,20,ThirdYear,IT,0 to 5,5,1 to 3,8,7,8k-10k,1 hour,Often,Never,20:00-21:00,2,
+2/25/2024 12:36:29,Male,21,ThirdYear,Comp,0 to 5,7,0,8,1,Grt than 10k,1 hour,Rarely,Always,20:00-21:00,0,"As a data scientist myself, i would like to suggest some clarity features for collecting qualitative & quantitative data, (1)How many hours do you use electronic devices before sleep? >>> Quantify from 0 (zero) to 10(ten) & let people decide their screen time more precisely ; (2) Questions were really good, try adding more quantifying questionnaires "
+2/25/2024 13:12:28,Male,19,FirstYear,Mech,5 to 7,9,0,8,7,6k-8k,1 hour,Never,Never,20:00-21:00,0,
+2/25/2024 14:34:59,Male,18,FirstYear,AIML,5 to 7,6,1 to 3,8,8,6k-8k,1 hour,Rarely,Rarely,19:00-20:00,0,
+2/25/2024 14:47:21,Male,21,ThirdYear,ChemIC,5 to 7,9,1 to 3,9,1,4k-6k,1 hour,Never,Never,20:00-21:00,0,
+2/25/2024 16:08:57,Male,20,ThirdYear,IT,0 to 5,5,1 to 3,6,5,4k-6k,3 hours,Rarely,Always,20:00-21:00,0,Can
+2/25/2024 18:54:20,Male,19,FirstYear,Comp,7 to 9,9,1 to 3,8,5,4k-6k,2 hours,Rarely,Never,19:00-20:00,0,Please share the final results of the survey.Curious.
+2/25/2024 19:52:07,Male,21,ThirdYear,Comp,7 to 9,7,1 to 3,6,9,4k-6k,3 hours,Sometimes,Often,20:00-21:00,0,
+2/25/2024 20:41:18,Male,21,ThirdYear,Comp,5 to 7,9,0,5,5,6k-8k,4 hours,Rarely,Often,20:00-21:00,0,
+2/25/2024 23:17:49,Male,19,FirstYear,Mech,0 to 5,5,1 to 3,3,6,4k-6k,2 hours,Often,Always,20:00-21:00,0,It's good i guess 
+2/26/2024 0:00:17,Female,19,SecondYear,AIML,9,8,0,6,7,6k-8k,3 hours,Rarely,Often,20:00-21:00,0,
+2/26/2024 0:08:00,Male,22,ThirdYear,ChemIC,7 to 9,8,1 to 3,3,8,2k-4k,3 hours,Sometimes,Often,20:00-21:00,0,.
+2/26/2024 0:55:05,Female,19,SecondYear,Comp,5 to 7,9,4 to 5,7,7,6k-8k,4 hours,Sometimes,Sometimes,20:00-21:00,0,-
+2/26/2024 1:09:05,Male,20,ThirdYear,Mech,0 to 5,9,4 to 5,9,9,6k-8k,2 hours,Rarely,Often,20:00-21:00,0,It was a good survey. Do share the results of the survey I'm waiting for it.
+2/26/2024 9:03:01,Male,19,SecondYear,Comp,5 to 7,8,0,9,1,8k-10k,3 hours,Rarely,Never,21:00-22:00,0,Well and good
+2/26/2024 9:38:38,Female,18,FirstYear,Comp,5 to 7,3,1 to 3,5,5,8k-10k,1 hour,Rarely,Never,20:00-21:00,3,
+2/26/2024 10:50:57,Female,19,SecondYear,ET,0 to 5,1,0,1,10,0-2k,5 hours,Rarely,Always,23:00+,7,👍
+2/26/2024 10:53:45,Female,19,FirstYear,IT,7 to 9,3,4 to 5,3,9,6k-8k,3 hours,Sometimes,Sometimes,21:00-22:00,4,👍
+2/26/2024 10:54:40,Female,20,ThirdYear,Mech,5 to 7,1,1 to 3,4,6,4k-6k,3 hours,Sometimes,Rarely,21:00-22:00,2,👍
+2/26/2024 10:55:54,Male,23,ThirdYear,ChemIC,9,9,6 to 7,2,2,2k-4k,5 hours,Always,Never,22:00-23:00,0,👍
+2/26/2024 10:57:07,Female,19,SecondYear,ET,5 to 7,5,1 to 3,3,9,2k-4k,1 hour,Rarely,Rarely,21:00-22:00,0,👍
+2/26/2024 11:53:49,Female,18,FirstYear,ChemIC,5 to 7,5,1 to 3,6,4,4k-6k,2 hours,Sometimes,Often,20:00-21:00,1,
+2/26/2024 14:19:03,Male,21,BTech,Mech,5 to 7,7,1 to 3,8,8,2k-4k,1 hour,Rarely,Always,20:00-21:00,0,
+2/26/2024 15:22:10,Male,19,FirstYear,Comp,5 to 7,4,1 to 3,5,7,4k-6k,3 hours,Sometimes,Sometimes,21:00-22:00,0,
+2/26/2024 15:41:26,Male,20,ThirdYear,ET,5 to 7,3,6 to 7,7,10,Grt than 10k,5 hours,Always,Always,23:00+,4,
+2/26/2024 19:17:35,Male,23,ThirdYear,ET,5 to 7,10,1 to 3,10,10,0-2k,1 hour,Rarely,Always,19:00-20:00,0,Nice
+2/26/2024 22:09:11,Female,20,ThirdYear,Comp,5 to 7,4,1 to 3,2,10,4k-6k,3 hours,Sometimes,Always,21:00-22:00,1,
+2/27/2024 8:39:39,Male,20,SecondYear,IT,5 to 7,6,1 to 3,8,7,8k-10k,5 hours,Sometimes,Never,21:00-22:00,0,Best of luck. 
+2/27/2024 8:43:31,Male,22,ThirdYear,Mech,5 to 7,8,1 to 3,3,7,2k-4k,2 hours,Sometimes,Sometimes,22:00-23:00,0,Great
+2/27/2024 9:00:06,Male,18,FirstYear,ChemIC,5 to 7,4,1 to 3,4,1,6k-8k,1 hour,Sometimes,Never,20:00-21:00,0,Its nice survey. All important point are there in survey.
+2/27/2024 16:31:05,Male,20,FirstYear,ChemIC,7 to 9,7,1 to 3,7,7,4k-6k,1 hour,Rarely,Rarely,21:00-22:00,0,
+2/28/2024 18:47:32,Female,19,SecondYear,IT,5 to 7,7,1 to 3,4,6,4k-6k,2 hours,Rarely,Sometimes,20:00-21:00,0,
